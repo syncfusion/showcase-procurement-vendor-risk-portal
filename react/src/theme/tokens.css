@@ -1,0 +1,219 @@
+/* Colour, spacing, and component tokens.
+   Primitive, then semantic, then component. App styles use semantic and component tokens. */
+:root {
+  /* Primitive: color */
+  --sf-color-white: #ffffff;
+  --sf-color-slate-25: #f8fafc;
+  --sf-color-slate-50: #f6f8fb;
+  --sf-color-slate-100: #eef2f6;
+  --sf-color-slate-200: #e5e9f0;
+  --sf-color-slate-300: #d0d5dd;
+  --sf-color-slate-500: #667085;
+  --sf-color-slate-700: #344054;
+  --sf-color-slate-900: #172033;
+  --sf-color-blue-50: #eef4ff;
+  --sf-color-blue-200: #d6e4ff;
+  --sf-color-blue-600: #175cd3;
+  --sf-color-green-50: #ecfdf3;
+  --sf-color-green-600: #027a48;
+  --sf-color-amber-50: #fffaeb;
+  --sf-color-amber-600: #b54708;
+  --sf-color-red-50: #fef3f2;
+  --sf-color-red-600: #b42318;
+  /* Primitive: chart category colours (vivid; one hue family per slot, the same family in both themes) */
+  --sf-color-chart-blue: #3b82f6;
+  --sf-color-chart-teal: #0d9488;
+  --sf-color-chart-fuchsia: #a21caf;
+  --sf-color-chart-slate: #334155;
+  --sf-color-chart-sky: #0369a1;
+  --sf-color-chart-cyan: #0891b2;
+  --sf-color-chart-purple: #a855f7;
+  --sf-color-chart-indigo: #4f46e5;
+
+  /* Primitive: spacing, radius, elevation, typography */
+  --sf-space-1: 4px; --sf-space-2: 8px; --sf-space-3: 12px;
+  --sf-space-4: 16px; --sf-space-5: 20px; --sf-space-6: 24px;
+  --sf-radius-sm: 6px; --sf-radius-md: 8px; --sf-radius-lg: 12px; --sf-radius-xl: 14px;
+  --sf-size-kpi-icon: 34px;
+  --sf-size-kpi-min-height: 136px;
+  --sf-space-filter-gap: 50px;
+  --sf-size-field-period: 230px; --sf-size-field-select: 200px; --sf-size-field-wide: 320px;
+  --sf-radius-pill: 999px;
+  --sf-shadow-sm: 0 1px 3px rgb(16 24 40 / 8%);
+  --sf-font-sans: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  /* Semantic: light */
+  --color-sf-bg-primary: var(--sf-color-slate-50);
+  --color-sf-bg-surface: var(--sf-color-white);
+  --color-sf-bg-surface-muted: var(--sf-color-slate-25);
+  --color-sf-bg-surface-hover: var(--sf-color-blue-50);
+  --color-sf-fg-primary: var(--sf-color-slate-900);
+  --color-sf-fg-secondary: var(--sf-color-slate-500);
+  --color-sf-border-primary: var(--sf-color-slate-200);
+  --color-sf-border-strong: var(--sf-color-slate-300);
+  --color-sf-fg-brand-primary: var(--sf-color-blue-600);
+  --color-sf-bg-brand-subtle: var(--sf-color-blue-50);
+  --color-sf-border-brand: var(--sf-color-blue-200);
+  --color-sf-bg-success-primary: var(--sf-color-green-50);
+  --color-sf-fg-success-primary: var(--sf-color-green-600);
+  --color-sf-bg-warning-primary: var(--sf-color-amber-50);
+  --color-sf-fg-warning-primary: var(--sf-color-amber-600);
+  --color-sf-bg-danger-primary: var(--sf-color-red-50);
+  --color-sf-fg-danger-primary: var(--sf-color-red-600);
+  --color-sf-bg-info-primary: var(--sf-color-blue-50);
+  --color-sf-fg-info-primary: var(--sf-color-blue-600);
+  --color-sf-bg-neutral-primary: var(--sf-color-slate-100);
+  --color-sf-fg-neutral-primary: var(--sf-color-slate-500);
+  --color-sf-chart-series-1: var(--sf-color-chart-blue);
+  --color-sf-chart-series-2: var(--sf-color-chart-teal);
+  --color-sf-chart-series-3: var(--sf-color-chart-fuchsia);
+  --color-sf-chart-series-4: var(--sf-color-chart-slate);
+  --color-sf-chart-series-5: var(--sf-color-chart-sky);
+  --color-sf-chart-series-6: var(--sf-color-chart-cyan);
+  --color-sf-chart-series-7: var(--sf-color-chart-purple);
+  --color-sf-chart-series-8: var(--sf-color-chart-indigo);
+  --color-sf-chart-reference: var(--sf-color-slate-500);
+  --color-sf-focus-ring: var(--sf-color-blue-600);
+
+  /* Component */
+  --app-shell-bg: var(--color-sf-bg-primary);
+  --app-card-bg: var(--color-sf-bg-surface);
+  --app-card-border: var(--color-sf-border-primary);
+  --app-card-shadow: var(--sf-shadow-sm);
+  --app-nav-active-bg: var(--color-sf-bg-brand-subtle);
+  --app-nav-active-fg: var(--color-sf-fg-brand-primary);
+  --app-kpi-bg: var(--color-sf-bg-surface);
+  --app-kpi-content-inset-inline: var(--sf-space-4);
+  --app-kpi-content-inset-block: var(--sf-space-6);
+  --app-kpi-min-height: var(--sf-size-kpi-min-height);
+  --app-kpi-icon-size: var(--sf-size-kpi-icon);
+  --app-kpi-icon-inset-inline: var(--sf-space-4);
+  --app-kpi-icon-title-offset: calc(var(--sf-space-4) + 1px);
+  --app-kpi-icon-bg: var(--color-sf-bg-success-primary);
+  --app-kpi-icon-fg: var(--color-sf-fg-success-primary);
+  --app-kpi-focus-ring: var(--color-sf-focus-ring);
+  --app-focus-ring: var(--color-sf-focus-ring);
+  --app-filter-gap: var(--sf-space-filter-gap);
+  --app-filter-field-period: var(--sf-size-field-period);
+  --app-filter-field-select: var(--sf-size-field-select);
+  --app-filter-field-wide: var(--sf-size-field-wide);
+  --app-filter-chip-radius: var(--sf-radius-pill);
+  --app-filter-chip-bg: var(--color-sf-bg-brand-subtle);
+  --app-filter-chip-fg: var(--color-sf-fg-brand-primary);
+  --app-filter-chip-border: var(--color-sf-border-brand);
+  --app-filter-reset-fg: var(--color-sf-fg-brand-primary);
+  --app-filter-reset-border: var(--color-sf-border-brand);
+  /* File-type marks stay saturated in both themes so the PDF and Word glyphs stay readable. */
+  --app-file-pdf: #b42318;
+  --app-file-word: #175cd3;
+  --app-file-glyph: #ffffff;
+}
+
+:root[data-theme="dark"] {
+  /* Primitive overrides for dark mode */
+  --sf-color-white: #111827;
+  --sf-color-slate-25: #1f2937;
+  --sf-color-slate-50: #0f172a;
+  --sf-color-slate-100: #172554;
+  --sf-color-slate-200: #334155;
+  --sf-color-slate-300: #475569;
+  --sf-color-slate-500: #94a3b8;
+  --sf-color-slate-700: #cbd5e1;
+  --sf-color-slate-900: #e5e7eb;
+  --sf-color-blue-50: #1e3a8a;
+  --sf-color-blue-200: #1d4ed8;
+  --sf-color-blue-600: #93c5fd;
+  --sf-color-green-50: #052e1b;
+  --sf-color-green-600: #86efac;
+  --sf-color-amber-50: #451a03;
+  --sf-color-amber-600: #fbbf24;
+  --sf-color-red-50: #450a0a;
+  --sf-color-red-600: #fca5a5;
+  --sf-color-chart-blue: #3b82f6;
+  --sf-color-chart-teal: #2dd4bf;
+  --sf-color-chart-fuchsia: #e879f9;
+  --sf-color-chart-slate: #64748b;
+  --sf-color-chart-sky: #0ea5e9;
+  --sf-color-chart-cyan: #22d3ee;
+  --sf-color-chart-purple: #a855f7;
+  --sf-color-chart-indigo: #6366f1;
+  --sf-shadow-sm: 0 1px 3px rgb(0 0 0 / 35%);
+}
+
+/* Pure React (@syncfusion/react-*) style variables (material.css), mapped to the app's
+   semantic tokens so the pure components follow the app's light/dark themes. */
+:root {
+  --sf-color-primary: 23, 92, 211;
+  --sf-color-primary-container: 238, 244, 255;
+  --sf-color-on-primary: 255, 255, 255;
+  --sf-color-on-primary-container: 23, 48, 94;
+  --sf-color-secondary: 52, 64, 84;
+  --sf-color-secondary-container: 238, 242, 246;
+  --sf-color-on-secondary: 255, 255, 255;
+  --sf-color-on-secondary-container: 23, 32, 51;
+  --sf-color-surface: 255, 255, 255;
+  --sf-color-surface-variant: 238, 242, 246;
+  --sf-color-background: 246, 248, 251;
+  --sf-color-on-surface: 23, 32, 51;
+  --sf-color-on-surface-variant: 102, 112, 133;
+  --sf-color-outline: 208, 213, 221;
+  --sf-color-outline-variant: 229, 233, 240;
+  --sf-color-error: 180, 35, 24;
+  --sf-color-error-container: 254, 243, 242;
+  --sf-color-on-error: 255, 255, 255;
+  --sf-color-on-error-container: 101, 14, 11;
+  --sf-color-success: 2, 122, 72;
+  --sf-color-success-container: 236, 253, 243;
+  --sf-color-on-success: 255, 255, 255;
+  --sf-color-on-success-container: 5, 46, 27;
+  --sf-color-warning: 181, 71, 8;
+  --sf-color-warning-container: 255, 250, 235;
+  --sf-color-on-warning: 255, 255, 255;
+  --sf-color-on-warning-container: 69, 26, 3;
+  --sf-color-info: 23, 92, 211;
+  --sf-color-info-container: 238, 244, 255;
+  --sf-color-on-info: 255, 255, 255;
+  --sf-color-on-info-container: 23, 48, 94;
+  --sf-color-scrim: 0, 0, 0;
+  --sf-color-shadow: 0, 0, 0;
+  --sf-color-inverse-surface: 23, 32, 51;
+  --sf-color-inverse-on-surface: 245, 247, 250;
+  --sf-color-line-color: 229, 233, 240;
+}
+
+:root[data-theme="dark"] {
+  --sf-color-primary: 147, 197, 253;
+  --sf-color-primary-container: 30, 58, 138;
+  --sf-color-on-primary: 23, 48, 94;
+  --sf-color-on-primary-container: 219, 234, 254;
+  --sf-color-secondary: 203, 213, 225;
+  --sf-color-secondary-container: 31, 41, 55;
+  --sf-color-on-secondary: 23, 32, 51;
+  --sf-color-on-secondary-container: 226, 232, 240;
+  --sf-color-surface: 17, 25, 39;
+  --sf-color-surface-variant: 31, 41, 55;
+  --sf-color-background: 15, 23, 42;
+  --sf-color-on-surface: 229, 231, 235;
+  --sf-color-on-surface-variant: 148, 163, 184;
+  --sf-color-outline: 71, 85, 105;
+  --sf-color-outline-variant: 51, 65, 85;
+  --sf-color-error: 252, 165, 165;
+  --sf-color-error-container: 69, 10, 10;
+  --sf-color-on-error: 69, 10, 10;
+  --sf-color-on-error-container: 254, 226, 226;
+  --sf-color-success: 134, 239, 172;
+  --sf-color-success-container: 5, 46, 27;
+  --sf-color-on-success: 5, 46, 27;
+  --sf-color-on-success-container: 209, 250, 229;
+  --sf-color-warning: 251, 191, 36;
+  --sf-color-warning-container: 69, 26, 3;
+  --sf-color-on-warning: 69, 26, 3;
+  --sf-color-on-warning-container: 254, 243, 199;
+  --sf-color-info: 147, 197, 253;
+  --sf-color-info-container: 30, 58, 138;
+  --sf-color-on-info: 23, 48, 94;
+  --sf-color-on-info-container: 219, 234, 254;
+  --sf-color-inverse-surface: 229, 231, 235;
+  --sf-color-inverse-on-surface: 23, 32, 51;
+  --sf-color-line-color: 51, 65, 85;
+}

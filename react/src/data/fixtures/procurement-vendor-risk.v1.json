@@ -1,0 +1,5863 @@
+{
+  "schemaVersion": 1,
+  "generatedFor": "procurement-vendor-risk-portal",
+  "demoToday": "2026-10-15",
+  "timezone": "America/New_York",
+  "currency": "USD",
+  "months": [
+    "2025-10",
+    "2025-11",
+    "2025-12",
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04",
+    "2026-05",
+    "2026-06",
+    "2026-07",
+    "2026-08",
+    "2026-09"
+  ],
+  "tree": [
+    {
+      "id": "group-1",
+      "name": "Direct Materials",
+      "parentId": null,
+      "region": null,
+      "kind": "group"
+    },
+    {
+      "id": "group-2",
+      "name": "Indirect Materials",
+      "parentId": null,
+      "region": null,
+      "kind": "group"
+    },
+    {
+      "id": "group-3",
+      "name": "Logistics",
+      "parentId": null,
+      "region": null,
+      "kind": "group"
+    },
+    {
+      "id": "group-4",
+      "name": "Professional Services",
+      "parentId": null,
+      "region": null,
+      "kind": "group"
+    },
+    {
+      "id": "group-5",
+      "name": "IT & Software",
+      "parentId": null,
+      "region": null,
+      "kind": "group"
+    },
+    {
+      "id": "group-6",
+      "name": "Facilities",
+      "parentId": null,
+      "region": null,
+      "kind": "group"
+    },
+    {
+      "id": "cat-01",
+      "name": "Category 01 Cloud",
+      "parentId": "group-1",
+      "kind": "category",
+      "region": "EMEA"
+    },
+    {
+      "id": "cat-02",
+      "name": "Category 02 Tooling",
+      "parentId": "group-2",
+      "kind": "category",
+      "region": "AMER"
+    },
+    {
+      "id": "cat-03",
+      "name": "Category 03 Components",
+      "parentId": "group-2",
+      "kind": "category",
+      "region": "AMER"
+    },
+    {
+      "id": "cat-04",
+      "name": "Category 04 Audit",
+      "parentId": "group-3",
+      "kind": "category",
+      "region": "APAC"
+    },
+    {
+      "id": "cat-05",
+      "name": "Category 05 Freight",
+      "parentId": "group-3",
+      "kind": "category",
+      "region": "APAC"
+    },
+    {
+      "id": "cat-06",
+      "name": "Category 06 Tooling",
+      "parentId": "group-4",
+      "kind": "category",
+      "region": "AMER"
+    },
+    {
+      "id": "cat-07",
+      "name": "Category 07 Consulting",
+      "parentId": "group-4",
+      "kind": "category",
+      "region": "AMER"
+    },
+    {
+      "id": "cat-08",
+      "name": "Category 08 Components",
+      "parentId": "group-5",
+      "kind": "category",
+      "region": "EMEA"
+    },
+    {
+      "id": "cat-09",
+      "name": "Category 09 Raw",
+      "parentId": "group-5",
+      "kind": "category",
+      "region": "EMEA"
+    },
+    {
+      "id": "cat-10",
+      "name": "Category 10 Packaging",
+      "parentId": "group-6",
+      "kind": "category",
+      "region": "AMER"
+    }
+  ],
+  "categories": [
+    {
+      "id": "cat-01",
+      "name": "Category 01 Cloud",
+      "parentId": "group-1",
+      "parentName": "Direct Materials",
+      "region": "EMEA"
+    },
+    {
+      "id": "cat-02",
+      "name": "Category 02 Tooling",
+      "parentId": "group-2",
+      "parentName": "Indirect Materials",
+      "region": "AMER"
+    },
+    {
+      "id": "cat-03",
+      "name": "Category 03 Components",
+      "parentId": "group-2",
+      "parentName": "Indirect Materials",
+      "region": "AMER"
+    },
+    {
+      "id": "cat-04",
+      "name": "Category 04 Audit",
+      "parentId": "group-3",
+      "parentName": "Logistics",
+      "region": "APAC"
+    },
+    {
+      "id": "cat-05",
+      "name": "Category 05 Freight",
+      "parentId": "group-3",
+      "parentName": "Logistics",
+      "region": "APAC"
+    },
+    {
+      "id": "cat-06",
+      "name": "Category 06 Tooling",
+      "parentId": "group-4",
+      "parentName": "Professional Services",
+      "region": "AMER"
+    },
+    {
+      "id": "cat-07",
+      "name": "Category 07 Consulting",
+      "parentId": "group-4",
+      "parentName": "Professional Services",
+      "region": "AMER"
+    },
+    {
+      "id": "cat-08",
+      "name": "Category 08 Components",
+      "parentId": "group-5",
+      "parentName": "IT & Software",
+      "region": "EMEA"
+    },
+    {
+      "id": "cat-09",
+      "name": "Category 09 Raw",
+      "parentId": "group-5",
+      "parentName": "IT & Software",
+      "region": "EMEA"
+    },
+    {
+      "id": "cat-10",
+      "name": "Category 10 Packaging",
+      "parentId": "group-6",
+      "parentName": "Facilities",
+      "region": "AMER"
+    }
+  ],
+  "groups": [
+    {
+      "id": "group-1",
+      "name": "Direct Materials",
+      "parentId": null,
+      "region": null
+    },
+    {
+      "id": "group-2",
+      "name": "Indirect Materials",
+      "parentId": null,
+      "region": null
+    },
+    {
+      "id": "group-3",
+      "name": "Logistics",
+      "parentId": null,
+      "region": null
+    },
+    {
+      "id": "group-4",
+      "name": "Professional Services",
+      "parentId": null,
+      "region": null
+    },
+    {
+      "id": "group-5",
+      "name": "IT & Software",
+      "parentId": null,
+      "region": null
+    },
+    {
+      "id": "group-6",
+      "name": "Facilities",
+      "parentId": null,
+      "region": null
+    }
+  ],
+  "vendors": [
+    {
+      "id": "vendor-01",
+      "name": "Northwind Industrial Supplies",
+      "categoryId": "cat-01",
+      "categoryName": "Category 01 Cloud",
+      "categoryGroup": "Direct Materials",
+      "region": "EMEA",
+      "country": "Brazil",
+      "annualSpend": 28525521,
+      "onTimeDeliveryRate": 0.734,
+      "compositeRiskScore": 58,
+      "financialRisk": 77,
+      "complianceRisk": 95,
+      "deliveryRisk": 87,
+      "cyberRisk": 87,
+      "status": "In Review",
+      "contact": "contracts@northwind.example.com",
+      "yearsActive": 16
+    },
+    {
+      "id": "vendor-02",
+      "name": "Acme Logistics",
+      "categoryId": "cat-02",
+      "categoryName": "Category 02 Tooling",
+      "categoryGroup": "Indirect Materials",
+      "region": "AMER",
+      "country": "Singapore",
+      "annualSpend": 4673723,
+      "onTimeDeliveryRate": 0.836,
+      "compositeRiskScore": 73,
+      "financialRisk": 61,
+      "complianceRisk": 70,
+      "deliveryRisk": 76,
+      "cyberRisk": 65,
+      "status": "In Review",
+      "contact": "contracts@acme.example.com",
+      "yearsActive": 13
+    },
+    {
+      "id": "vendor-03",
+      "name": "Vertex Components",
+      "categoryId": "cat-03",
+      "categoryName": "Category 03 Components",
+      "categoryGroup": "Indirect Materials",
+      "region": "AMER",
+      "country": "UK",
+      "annualSpend": 25259300,
+      "onTimeDeliveryRate": 0.818,
+      "compositeRiskScore": 68,
+      "financialRisk": 62,
+      "complianceRisk": 57,
+      "deliveryRisk": 80,
+      "cyberRisk": 56,
+      "status": "In Review",
+      "contact": "contracts@vertex.example.com",
+      "yearsActive": 8
+    },
+    {
+      "id": "vendor-04",
+      "name": "Global Packaging",
+      "categoryId": "cat-04",
+      "categoryName": "Category 04 Audit",
+      "categoryGroup": "Logistics",
+      "region": "APAC",
+      "country": "India",
+      "annualSpend": 35287064,
+      "onTimeDeliveryRate": 0.938,
+      "compositeRiskScore": 32,
+      "financialRisk": 29,
+      "complianceRisk": 28,
+      "deliveryRisk": 42,
+      "cyberRisk": 37,
+      "status": "In Review",
+      "contact": "contracts@global.example.com",
+      "yearsActive": 6
+    },
+    {
+      "id": "vendor-05",
+      "name": "Apex Systems",
+      "categoryId": "cat-05",
+      "categoryName": "Category 05 Freight",
+      "categoryGroup": "Logistics",
+      "region": "APAC",
+      "country": "Brazil",
+      "annualSpend": 31979438,
+      "onTimeDeliveryRate": 0.98,
+      "compositeRiskScore": 82,
+      "financialRisk": 85,
+      "complianceRisk": 77,
+      "deliveryRisk": 78,
+      "cyberRisk": 90,
+      "status": "In Review",
+      "contact": "contracts@apex.example.com",
+      "yearsActive": 2
+    },
+    {
+      "id": "vendor-06",
+      "name": "Summit Consulting",
+      "categoryId": "cat-06",
+      "categoryName": "Category 06 Tooling",
+      "categoryGroup": "Professional Services",
+      "region": "AMER",
+      "country": "Germany",
+      "annualSpend": 38372365,
+      "onTimeDeliveryRate": 0.919,
+      "compositeRiskScore": 58,
+      "financialRisk": 46,
+      "complianceRisk": 60,
+      "deliveryRisk": 52,
+      "cyberRisk": 56,
+      "status": "In Review",
+      "contact": "contracts@summit.example.com",
+      "yearsActive": 1
+    },
+    {
+      "id": "vendor-07",
+      "name": "Cascade Materials",
+      "categoryId": "cat-07",
+      "categoryName": "Category 07 Consulting",
+      "categoryGroup": "Professional Services",
+      "region": "AMER",
+      "country": "Japan",
+      "annualSpend": 2262076,
+      "onTimeDeliveryRate": 0.876,
+      "compositeRiskScore": 49,
+      "financialRisk": 43,
+      "complianceRisk": 44,
+      "deliveryRisk": 53,
+      "cyberRisk": 41,
+      "status": "Active",
+      "contact": "contracts@cascade.example.com",
+      "yearsActive": 14
+    },
+    {
+      "id": "vendor-08",
+      "name": "Pioneer Distribution",
+      "categoryId": "cat-08",
+      "categoryName": "Category 08 Components",
+      "categoryGroup": "IT & Software",
+      "region": "EMEA",
+      "country": "India",
+      "annualSpend": 38817426,
+      "onTimeDeliveryRate": 0.97,
+      "compositeRiskScore": 72,
+      "financialRisk": 62,
+      "complianceRisk": 64,
+      "deliveryRisk": 83,
+      "cyberRisk": 83,
+      "status": "Active",
+      "contact": "contracts@pioneer.example.com",
+      "yearsActive": 8
+    },
+    {
+      "id": "vendor-09",
+      "name": "Atlas Technologies",
+      "categoryId": "cat-09",
+      "categoryName": "Category 09 Raw",
+      "categoryGroup": "IT & Software",
+      "region": "EMEA",
+      "country": "Germany",
+      "annualSpend": 20455779,
+      "onTimeDeliveryRate": 0.975,
+      "compositeRiskScore": 64,
+      "financialRisk": 70,
+      "complianceRisk": 58,
+      "deliveryRisk": 57,
+      "cyberRisk": 53,
+      "status": "Active",
+      "contact": "contracts@atlas.example.com",
+      "yearsActive": 3
+    },
+    {
+      "id": "vendor-10",
+      "name": "Crestline Group",
+      "categoryId": "cat-10",
+      "categoryName": "Category 10 Packaging",
+      "categoryGroup": "Facilities",
+      "region": "AMER",
+      "country": "UK",
+      "annualSpend": 11398099,
+      "onTimeDeliveryRate": 0.896,
+      "compositeRiskScore": 49,
+      "financialRisk": 59,
+      "complianceRisk": 51,
+      "deliveryRisk": 39,
+      "cyberRisk": 55,
+      "status": "On Hold",
+      "contact": "contracts@crestline.example.com",
+      "yearsActive": 13
+    },
+    {
+      "id": "vendor-11",
+      "name": "BluePeak Industrial Supplies",
+      "categoryId": "cat-01",
+      "categoryName": "Category 01 Cloud",
+      "categoryGroup": "Direct Materials",
+      "region": "EMEA",
+      "country": "India",
+      "annualSpend": 8772325,
+      "onTimeDeliveryRate": 0.845,
+      "compositeRiskScore": 52,
+      "financialRisk": 45,
+      "complianceRisk": 42,
+      "deliveryRisk": 46,
+      "cyberRisk": 43,
+      "status": "On Hold",
+      "contact": "contracts@bluepeak.example.com",
+      "yearsActive": 15
+    },
+    {
+      "id": "vendor-12",
+      "name": "Ironbridge Logistics",
+      "categoryId": "cat-02",
+      "categoryName": "Category 02 Tooling",
+      "categoryGroup": "Indirect Materials",
+      "region": "AMER",
+      "country": "Brazil",
+      "annualSpend": 37257282,
+      "onTimeDeliveryRate": 0.841,
+      "compositeRiskScore": 52,
+      "financialRisk": 44,
+      "complianceRisk": 52,
+      "deliveryRisk": 41,
+      "cyberRisk": 63,
+      "status": "In Review",
+      "contact": "contracts@ironbridge.example.com",
+      "yearsActive": 16
+    },
+    {
+      "id": "vendor-13",
+      "name": "Meridian Components",
+      "categoryId": "cat-03",
+      "categoryName": "Category 03 Components",
+      "categoryGroup": "Indirect Materials",
+      "region": "AMER",
+      "country": "Brazil",
+      "annualSpend": 1943289,
+      "onTimeDeliveryRate": 0.924,
+      "compositeRiskScore": 37,
+      "financialRisk": 48,
+      "complianceRisk": 49,
+      "deliveryRisk": 38,
+      "cyberRisk": 29,
+      "status": "In Review",
+      "contact": "contracts@meridian.example.com",
+      "yearsActive": 2
+    },
+    {
+      "id": "vendor-14",
+      "name": "Oakfield Packaging",
+      "categoryId": "cat-04",
+      "categoryName": "Category 04 Audit",
+      "categoryGroup": "Logistics",
+      "region": "APAC",
+      "country": "USA",
+      "annualSpend": 21866312,
+      "onTimeDeliveryRate": 0.976,
+      "compositeRiskScore": 62,
+      "financialRisk": 71,
+      "complianceRisk": 61,
+      "deliveryRisk": 50,
+      "cyberRisk": 64,
+      "status": "On Hold",
+      "contact": "contracts@oakfield.example.com",
+      "yearsActive": 4
+    },
+    {
+      "id": "vendor-15",
+      "name": "Silverline Systems",
+      "categoryId": "cat-05",
+      "categoryName": "Category 05 Freight",
+      "categoryGroup": "Logistics",
+      "region": "APAC",
+      "country": "UK",
+      "annualSpend": 8771040,
+      "onTimeDeliveryRate": 0.741,
+      "compositeRiskScore": 86,
+      "financialRisk": 91,
+      "complianceRisk": 85,
+      "deliveryRisk": 89,
+      "cyberRisk": 85,
+      "status": "Active",
+      "contact": "contracts@silverline.example.com",
+      "yearsActive": 13
+    },
+    {
+      "id": "vendor-16",
+      "name": "Triton Consulting",
+      "categoryId": "cat-06",
+      "categoryName": "Category 06 Tooling",
+      "categoryGroup": "Professional Services",
+      "region": "AMER",
+      "country": "USA",
+      "annualSpend": 8191523,
+      "onTimeDeliveryRate": 0.886,
+      "compositeRiskScore": 44,
+      "financialRisk": 44,
+      "complianceRisk": 40,
+      "deliveryRisk": 45,
+      "cyberRisk": 56,
+      "status": "Active",
+      "contact": "contracts@triton.example.com",
+      "yearsActive": 16
+    },
+    {
+      "id": "vendor-17",
+      "name": "Quantex Materials",
+      "categoryId": "cat-07",
+      "categoryName": "Category 07 Consulting",
+      "categoryGroup": "Professional Services",
+      "region": "AMER",
+      "country": "UK",
+      "annualSpend": 21373763,
+      "onTimeDeliveryRate": 0.838,
+      "compositeRiskScore": 57,
+      "financialRisk": 57,
+      "complianceRisk": 63,
+      "deliveryRisk": 51,
+      "cyberRisk": 51,
+      "status": "In Review",
+      "contact": "contracts@quantex.example.com",
+      "yearsActive": 1
+    },
+    {
+      "id": "vendor-18",
+      "name": "Harborside Distribution",
+      "categoryId": "cat-08",
+      "categoryName": "Category 08 Components",
+      "categoryGroup": "IT & Software",
+      "region": "EMEA",
+      "country": "UK",
+      "annualSpend": 3692830,
+      "onTimeDeliveryRate": 0.947,
+      "compositeRiskScore": 71,
+      "financialRisk": 80,
+      "complianceRisk": 74,
+      "deliveryRisk": 67,
+      "cyberRisk": 62,
+      "status": "Active",
+      "contact": "contracts@harborside.example.com",
+      "yearsActive": 11
+    },
+    {
+      "id": "vendor-19",
+      "name": "Redstone Technologies",
+      "categoryId": "cat-09",
+      "categoryName": "Category 09 Raw",
+      "categoryGroup": "IT & Software",
+      "region": "EMEA",
+      "country": "USA",
+      "annualSpend": 39322499,
+      "onTimeDeliveryRate": 0.727,
+      "compositeRiskScore": 88,
+      "financialRisk": 91,
+      "complianceRisk": 81,
+      "deliveryRisk": 96,
+      "cyberRisk": 98,
+      "status": "Active",
+      "contact": "contracts@redstone.example.com",
+      "yearsActive": 15
+    },
+    {
+      "id": "vendor-20",
+      "name": "Vanguard Group",
+      "categoryId": "cat-10",
+      "categoryName": "Category 10 Packaging",
+      "categoryGroup": "Facilities",
+      "region": "AMER",
+      "country": "UK",
+      "annualSpend": 27199873,
+      "onTimeDeliveryRate": 0.925,
+      "compositeRiskScore": 70,
+      "financialRisk": 58,
+      "complianceRisk": 75,
+      "deliveryRisk": 81,
+      "cyberRisk": 72,
+      "status": "In Review",
+      "contact": "contracts@vanguard.example.com",
+      "yearsActive": 6
+    },
+    {
+      "id": "vendor-21",
+      "name": "Windmere Industrial Supplies",
+      "categoryId": "cat-01",
+      "categoryName": "Category 01 Cloud",
+      "categoryGroup": "Direct Materials",
+      "region": "EMEA",
+      "country": "Germany",
+      "annualSpend": 1047314,
+      "onTimeDeliveryRate": 0.922,
+      "compositeRiskScore": 82,
+      "financialRisk": 91,
+      "complianceRisk": 73,
+      "deliveryRisk": 90,
+      "cyberRisk": 71,
+      "status": "In Review",
+      "contact": "contracts@windmere.example.com",
+      "yearsActive": 18
+    },
+    {
+      "id": "vendor-22",
+      "name": "Zenith Logistics",
+      "categoryId": "cat-02",
+      "categoryName": "Category 02 Tooling",
+      "categoryGroup": "Indirect Materials",
+      "region": "AMER",
+      "country": "Japan",
+      "annualSpend": 18666710,
+      "onTimeDeliveryRate": 0.746,
+      "compositeRiskScore": 63,
+      "financialRisk": 58,
+      "complianceRisk": 65,
+      "deliveryRisk": 72,
+      "cyberRisk": 55,
+      "status": "Active",
+      "contact": "contracts@zenith.example.com",
+      "yearsActive": 14
+    },
+    {
+      "id": "vendor-23",
+      "name": "Ironclad Components",
+      "categoryId": "cat-03",
+      "categoryName": "Category 03 Components",
+      "categoryGroup": "Indirect Materials",
+      "region": "AMER",
+      "country": "UK",
+      "annualSpend": 11077444,
+      "onTimeDeliveryRate": 0.776,
+      "compositeRiskScore": 29,
+      "financialRisk": 40,
+      "complianceRisk": 30,
+      "deliveryRisk": 27,
+      "cyberRisk": 34,
+      "status": "On Hold",
+      "contact": "contracts@ironclad.example.com",
+      "yearsActive": 13
+    },
+    {
+      "id": "vendor-24",
+      "name": "Lakeshore Packaging",
+      "categoryId": "cat-04",
+      "categoryName": "Category 04 Audit",
+      "categoryGroup": "Logistics",
+      "region": "APAC",
+      "country": "Japan",
+      "annualSpend": 18629887,
+      "onTimeDeliveryRate": 0.837,
+      "compositeRiskScore": 60,
+      "financialRisk": 68,
+      "complianceRisk": 60,
+      "deliveryRisk": 59,
+      "cyberRisk": 48,
+      "status": "Active",
+      "contact": "contracts@lakeshore.example.com",
+      "yearsActive": 14
+    },
+    {
+      "id": "vendor-25",
+      "name": "Brightpath Systems",
+      "categoryId": "cat-05",
+      "categoryName": "Category 05 Freight",
+      "categoryGroup": "Logistics",
+      "region": "APAC",
+      "country": "India",
+      "annualSpend": 9362494,
+      "onTimeDeliveryRate": 0.893,
+      "compositeRiskScore": 40,
+      "financialRisk": 47,
+      "complianceRisk": 32,
+      "deliveryRisk": 51,
+      "cyberRisk": 32,
+      "status": "Active",
+      "contact": "contracts@brightpath.example.com",
+      "yearsActive": 8
+    },
+    {
+      "id": "vendor-26",
+      "name": "Cornerstone Consulting",
+      "categoryId": "cat-06",
+      "categoryName": "Category 06 Tooling",
+      "categoryGroup": "Professional Services",
+      "region": "AMER",
+      "country": "Brazil",
+      "annualSpend": 3088616,
+      "onTimeDeliveryRate": 0.979,
+      "compositeRiskScore": 81,
+      "financialRisk": 75,
+      "complianceRisk": 86,
+      "deliveryRisk": 82,
+      "cyberRisk": 76,
+      "status": "Active",
+      "contact": "contracts@cornerstone.example.com",
+      "yearsActive": 8
+    },
+    {
+      "id": "vendor-27",
+      "name": "Delmar Materials",
+      "categoryId": "cat-07",
+      "categoryName": "Category 07 Consulting",
+      "categoryGroup": "Professional Services",
+      "region": "AMER",
+      "country": "USA",
+      "annualSpend": 5129826,
+      "onTimeDeliveryRate": 0.886,
+      "compositeRiskScore": 33,
+      "financialRisk": 21,
+      "complianceRisk": 22,
+      "deliveryRisk": 39,
+      "cyberRisk": 28,
+      "status": "Active",
+      "contact": "contracts@delmar.example.com",
+      "yearsActive": 9
+    },
+    {
+      "id": "vendor-28",
+      "name": "Eastwood Distribution",
+      "categoryId": "cat-08",
+      "categoryName": "Category 08 Components",
+      "categoryGroup": "IT & Software",
+      "region": "EMEA",
+      "country": "Germany",
+      "annualSpend": 20770027,
+      "onTimeDeliveryRate": 0.745,
+      "compositeRiskScore": 73,
+      "financialRisk": 65,
+      "complianceRisk": 62,
+      "deliveryRisk": 63,
+      "cyberRisk": 74,
+      "status": "On Hold",
+      "contact": "contracts@eastwood.example.com",
+      "yearsActive": 13
+    },
+    {
+      "id": "vendor-29",
+      "name": "Fairpoint Technologies",
+      "categoryId": "cat-09",
+      "categoryName": "Category 09 Raw",
+      "categoryGroup": "IT & Software",
+      "region": "EMEA",
+      "country": "USA",
+      "annualSpend": 31732393,
+      "onTimeDeliveryRate": 0.746,
+      "compositeRiskScore": 79,
+      "financialRisk": 67,
+      "complianceRisk": 77,
+      "deliveryRisk": 84,
+      "cyberRisk": 69,
+      "status": "In Review",
+      "contact": "contracts@fairpoint.example.com",
+      "yearsActive": 9
+    },
+    {
+      "id": "vendor-30",
+      "name": "Granite Group",
+      "categoryId": "cat-10",
+      "categoryName": "Category 10 Packaging",
+      "categoryGroup": "Facilities",
+      "region": "AMER",
+      "country": "UK",
+      "annualSpend": 32207900,
+      "onTimeDeliveryRate": 0.771,
+      "compositeRiskScore": 69,
+      "financialRisk": 76,
+      "complianceRisk": 65,
+      "deliveryRisk": 81,
+      "cyberRisk": 59,
+      "status": "Active",
+      "contact": "contracts@granite.example.com",
+      "yearsActive": 14
+    },
+    {
+      "id": "vendor-31",
+      "name": "Hollis Industrial Supplies",
+      "categoryId": "cat-01",
+      "categoryName": "Category 01 Cloud",
+      "categoryGroup": "Direct Materials",
+      "region": "EMEA",
+      "country": "Japan",
+      "annualSpend": 17399589,
+      "onTimeDeliveryRate": 0.958,
+      "compositeRiskScore": 43,
+      "financialRisk": 48,
+      "complianceRisk": 44,
+      "deliveryRisk": 44,
+      "cyberRisk": 52,
+      "status": "In Review",
+      "contact": "contracts@hollis.example.com",
+      "yearsActive": 7
+    },
+    {
+      "id": "vendor-32",
+      "name": "Interlink Logistics",
+      "categoryId": "cat-02",
+      "categoryName": "Category 02 Tooling",
+      "categoryGroup": "Indirect Materials",
+      "region": "AMER",
+      "country": "Japan",
+      "annualSpend": 15209912,
+      "onTimeDeliveryRate": 0.84,
+      "compositeRiskScore": 55,
+      "financialRisk": 54,
+      "complianceRisk": 50,
+      "deliveryRisk": 57,
+      "cyberRisk": 52,
+      "status": "In Review",
+      "contact": "contracts@interlink.example.com",
+      "yearsActive": 4
+    },
+    {
+      "id": "vendor-33",
+      "name": "Juniper Components",
+      "categoryId": "cat-03",
+      "categoryName": "Category 03 Components",
+      "categoryGroup": "Indirect Materials",
+      "region": "AMER",
+      "country": "USA",
+      "annualSpend": 34193901,
+      "onTimeDeliveryRate": 0.869,
+      "compositeRiskScore": 86,
+      "financialRisk": 85,
+      "complianceRisk": 77,
+      "deliveryRisk": 85,
+      "cyberRisk": 95,
+      "status": "Active",
+      "contact": "contracts@juniper.example.com",
+      "yearsActive": 1
+    },
+    {
+      "id": "vendor-34",
+      "name": "Kingston Packaging",
+      "categoryId": "cat-04",
+      "categoryName": "Category 04 Audit",
+      "categoryGroup": "Logistics",
+      "region": "APAC",
+      "country": "India",
+      "annualSpend": 9385902,
+      "onTimeDeliveryRate": 0.767,
+      "compositeRiskScore": 67,
+      "financialRisk": 66,
+      "complianceRisk": 67,
+      "deliveryRisk": 75,
+      "cyberRisk": 67,
+      "status": "Active",
+      "contact": "contracts@kingston.example.com",
+      "yearsActive": 12
+    },
+    {
+      "id": "vendor-35",
+      "name": "Larkspur Systems",
+      "categoryId": "cat-05",
+      "categoryName": "Category 05 Freight",
+      "categoryGroup": "Logistics",
+      "region": "APAC",
+      "country": "UK",
+      "annualSpend": 2550499,
+      "onTimeDeliveryRate": 0.951,
+      "compositeRiskScore": 57,
+      "financialRisk": 58,
+      "complianceRisk": 57,
+      "deliveryRisk": 68,
+      "cyberRisk": 52,
+      "status": "Active",
+      "contact": "contracts@larkspur.example.com",
+      "yearsActive": 5
+    },
+    {
+      "id": "vendor-36",
+      "name": "Maplewood Consulting",
+      "categoryId": "cat-06",
+      "categoryName": "Category 06 Tooling",
+      "categoryGroup": "Professional Services",
+      "region": "AMER",
+      "country": "Japan",
+      "annualSpend": 28192984,
+      "onTimeDeliveryRate": 0.935,
+      "compositeRiskScore": 31,
+      "financialRisk": 39,
+      "complianceRisk": 35,
+      "deliveryRisk": 22,
+      "cyberRisk": 27,
+      "status": "Active",
+      "contact": "contracts@maplewood.example.com",
+      "yearsActive": 16
+    },
+    {
+      "id": "vendor-37",
+      "name": "Norwood Materials",
+      "categoryId": "cat-07",
+      "categoryName": "Category 07 Consulting",
+      "categoryGroup": "Professional Services",
+      "region": "AMER",
+      "country": "Japan",
+      "annualSpend": 36524675,
+      "onTimeDeliveryRate": 0.772,
+      "compositeRiskScore": 70,
+      "financialRisk": 66,
+      "complianceRisk": 70,
+      "deliveryRisk": 74,
+      "cyberRisk": 59,
+      "status": "In Review",
+      "contact": "contracts@norwood.example.com",
+      "yearsActive": 15
+    },
+    {
+      "id": "vendor-38",
+      "name": "Oakhurst Distribution",
+      "categoryId": "cat-08",
+      "categoryName": "Category 08 Components",
+      "categoryGroup": "IT & Software",
+      "region": "EMEA",
+      "country": "Germany",
+      "annualSpend": 2383871,
+      "onTimeDeliveryRate": 0.901,
+      "compositeRiskScore": 79,
+      "financialRisk": 79,
+      "complianceRisk": 69,
+      "deliveryRisk": 79,
+      "cyberRisk": 83,
+      "status": "In Review",
+      "contact": "contracts@oakhurst.example.com",
+      "yearsActive": 5
+    },
+    {
+      "id": "vendor-39",
+      "name": "Pinewood Technologies",
+      "categoryId": "cat-09",
+      "categoryName": "Category 09 Raw",
+      "categoryGroup": "IT & Software",
+      "region": "EMEA",
+      "country": "India",
+      "annualSpend": 12745316,
+      "onTimeDeliveryRate": 0.908,
+      "compositeRiskScore": 33,
+      "financialRisk": 22,
+      "complianceRisk": 21,
+      "deliveryRisk": 38,
+      "cyberRisk": 24,
+      "status": "Active",
+      "contact": "contracts@pinewood.example.com",
+      "yearsActive": 2
+    },
+    {
+      "id": "vendor-40",
+      "name": "Quarrystone Group",
+      "categoryId": "cat-10",
+      "categoryName": "Category 10 Packaging",
+      "categoryGroup": "Facilities",
+      "region": "AMER",
+      "country": "Canada",
+      "annualSpend": 40126168,
+      "onTimeDeliveryRate": 0.792,
+      "compositeRiskScore": 45,
+      "financialRisk": 52,
+      "complianceRisk": 41,
+      "deliveryRisk": 42,
+      "cyberRisk": 46,
+      "status": "In Review",
+      "contact": "contracts@quarrystone.example.com",
+      "yearsActive": 15
+    },
+    {
+      "id": "vendor-41",
+      "name": "Riverbend Industrial Supplies",
+      "categoryId": "cat-01",
+      "categoryName": "Category 01 Cloud",
+      "categoryGroup": "Direct Materials",
+      "region": "EMEA",
+      "country": "Japan",
+      "annualSpend": 40099627,
+      "onTimeDeliveryRate": 0.845,
+      "compositeRiskScore": 77,
+      "financialRisk": 83,
+      "complianceRisk": 72,
+      "deliveryRisk": 78,
+      "cyberRisk": 79,
+      "status": "Active",
+      "contact": "contracts@riverbend.example.com",
+      "yearsActive": 16
+    },
+    {
+      "id": "vendor-42",
+      "name": "Stonebridge Logistics",
+      "categoryId": "cat-02",
+      "categoryName": "Category 02 Tooling",
+      "categoryGroup": "Indirect Materials",
+      "region": "AMER",
+      "country": "UK",
+      "annualSpend": 26855243,
+      "onTimeDeliveryRate": 0.94,
+      "compositeRiskScore": 42,
+      "financialRisk": 36,
+      "complianceRisk": 48,
+      "deliveryRisk": 43,
+      "cyberRisk": 32,
+      "status": "Active",
+      "contact": "contracts@stonebridge.example.com",
+      "yearsActive": 4
+    },
+    {
+      "id": "vendor-43",
+      "name": "Talbot Components",
+      "categoryId": "cat-03",
+      "categoryName": "Category 03 Components",
+      "categoryGroup": "Indirect Materials",
+      "region": "AMER",
+      "country": "USA",
+      "annualSpend": 32617431,
+      "onTimeDeliveryRate": 0.823,
+      "compositeRiskScore": 91,
+      "financialRisk": 85,
+      "complianceRisk": 88,
+      "deliveryRisk": 100,
+      "cyberRisk": 83,
+      "status": "Active",
+      "contact": "contracts@talbot.example.com",
+      "yearsActive": 15
+    },
+    {
+      "id": "vendor-44",
+      "name": "Umber Packaging",
+      "categoryId": "cat-04",
+      "categoryName": "Category 04 Audit",
+      "categoryGroup": "Logistics",
+      "region": "APAC",
+      "country": "Canada",
+      "annualSpend": 4660871,
+      "onTimeDeliveryRate": 0.908,
+      "compositeRiskScore": 31,
+      "financialRisk": 34,
+      "complianceRisk": 31,
+      "deliveryRisk": 39,
+      "cyberRisk": 32,
+      "status": "Active",
+      "contact": "contracts@umber.example.com",
+      "yearsActive": 13
+    },
+    {
+      "id": "vendor-45",
+      "name": "Verdant Systems",
+      "categoryId": "cat-05",
+      "categoryName": "Category 05 Freight",
+      "categoryGroup": "Logistics",
+      "region": "APAC",
+      "country": "Japan",
+      "annualSpend": 41900428,
+      "onTimeDeliveryRate": 0.883,
+      "compositeRiskScore": 80,
+      "financialRisk": 68,
+      "complianceRisk": 69,
+      "deliveryRisk": 70,
+      "cyberRisk": 82,
+      "status": "Active",
+      "contact": "contracts@verdant.example.com",
+      "yearsActive": 13
+    },
+    {
+      "id": "vendor-46",
+      "name": "Northwind Consulting",
+      "categoryId": "cat-06",
+      "categoryName": "Category 06 Tooling",
+      "categoryGroup": "Professional Services",
+      "region": "AMER",
+      "country": "Germany",
+      "annualSpend": 13924106,
+      "onTimeDeliveryRate": 0.721,
+      "compositeRiskScore": 78,
+      "financialRisk": 89,
+      "complianceRisk": 67,
+      "deliveryRisk": 73,
+      "cyberRisk": 74,
+      "status": "In Review",
+      "contact": "contracts@northwind.example.com",
+      "yearsActive": 1
+    }
+  ],
+  "scoreHistory": [
+    {
+      "vendorId": "vendor-01",
+      "month": "2025-10",
+      "compositeRiskScore": 46
+    },
+    {
+      "vendorId": "vendor-01",
+      "month": "2025-11",
+      "compositeRiskScore": 46
+    },
+    {
+      "vendorId": "vendor-01",
+      "month": "2025-12",
+      "compositeRiskScore": 49
+    },
+    {
+      "vendorId": "vendor-01",
+      "month": "2026-01",
+      "compositeRiskScore": 47
+    },
+    {
+      "vendorId": "vendor-01",
+      "month": "2026-02",
+      "compositeRiskScore": 48
+    },
+    {
+      "vendorId": "vendor-01",
+      "month": "2026-03",
+      "compositeRiskScore": 46
+    },
+    {
+      "vendorId": "vendor-01",
+      "month": "2026-04",
+      "compositeRiskScore": 46
+    },
+    {
+      "vendorId": "vendor-01",
+      "month": "2026-05",
+      "compositeRiskScore": 44
+    },
+    {
+      "vendorId": "vendor-01",
+      "month": "2026-06",
+      "compositeRiskScore": 50
+    },
+    {
+      "vendorId": "vendor-01",
+      "month": "2026-07",
+      "compositeRiskScore": 45
+    },
+    {
+      "vendorId": "vendor-01",
+      "month": "2026-08",
+      "compositeRiskScore": 44
+    },
+    {
+      "vendorId": "vendor-01",
+      "month": "2026-09",
+      "compositeRiskScore": 58
+    },
+    {
+      "vendorId": "vendor-02",
+      "month": "2025-10",
+      "compositeRiskScore": 73
+    },
+    {
+      "vendorId": "vendor-02",
+      "month": "2025-11",
+      "compositeRiskScore": 74
+    },
+    {
+      "vendorId": "vendor-02",
+      "month": "2025-12",
+      "compositeRiskScore": 71
+    },
+    {
+      "vendorId": "vendor-02",
+      "month": "2026-01",
+      "compositeRiskScore": 74
+    },
+    {
+      "vendorId": "vendor-02",
+      "month": "2026-02",
+      "compositeRiskScore": 73
+    },
+    {
+      "vendorId": "vendor-02",
+      "month": "2026-03",
+      "compositeRiskScore": 79
+    },
+    {
+      "vendorId": "vendor-02",
+      "month": "2026-04",
+      "compositeRiskScore": 73
+    },
+    {
+      "vendorId": "vendor-02",
+      "month": "2026-05",
+      "compositeRiskScore": 79
+    },
+    {
+      "vendorId": "vendor-02",
+      "month": "2026-06",
+      "compositeRiskScore": 75
+    },
+    {
+      "vendorId": "vendor-02",
+      "month": "2026-07",
+      "compositeRiskScore": 77
+    },
+    {
+      "vendorId": "vendor-02",
+      "month": "2026-08",
+      "compositeRiskScore": 79
+    },
+    {
+      "vendorId": "vendor-02",
+      "month": "2026-09",
+      "compositeRiskScore": 73
+    },
+    {
+      "vendorId": "vendor-03",
+      "month": "2025-10",
+      "compositeRiskScore": 72
+    },
+    {
+      "vendorId": "vendor-03",
+      "month": "2025-11",
+      "compositeRiskScore": 73
+    },
+    {
+      "vendorId": "vendor-03",
+      "month": "2025-12",
+      "compositeRiskScore": 75
+    },
+    {
+      "vendorId": "vendor-03",
+      "month": "2026-01",
+      "compositeRiskScore": 72
+    },
+    {
+      "vendorId": "vendor-03",
+      "month": "2026-02",
+      "compositeRiskScore": 78
+    },
+    {
+      "vendorId": "vendor-03",
+      "month": "2026-03",
+      "compositeRiskScore": 72
+    },
+    {
+      "vendorId": "vendor-03",
+      "month": "2026-04",
+      "compositeRiskScore": 77
+    },
+    {
+      "vendorId": "vendor-03",
+      "month": "2026-05",
+      "compositeRiskScore": 69
+    },
+    {
+      "vendorId": "vendor-03",
+      "month": "2026-06",
+      "compositeRiskScore": 75
+    },
+    {
+      "vendorId": "vendor-03",
+      "month": "2026-07",
+      "compositeRiskScore": 73
+    },
+    {
+      "vendorId": "vendor-03",
+      "month": "2026-08",
+      "compositeRiskScore": 78
+    },
+    {
+      "vendorId": "vendor-03",
+      "month": "2026-09",
+      "compositeRiskScore": 68
+    },
+    {
+      "vendorId": "vendor-04",
+      "month": "2025-10",
+      "compositeRiskScore": 36
+    },
+    {
+      "vendorId": "vendor-04",
+      "month": "2025-11",
+      "compositeRiskScore": 31
+    },
+    {
+      "vendorId": "vendor-04",
+      "month": "2025-12",
+      "compositeRiskScore": 32
+    },
+    {
+      "vendorId": "vendor-04",
+      "month": "2026-01",
+      "compositeRiskScore": 36
+    },
+    {
+      "vendorId": "vendor-04",
+      "month": "2026-02",
+      "compositeRiskScore": 40
+    },
+    {
+      "vendorId": "vendor-04",
+      "month": "2026-03",
+      "compositeRiskScore": 32
+    },
+    {
+      "vendorId": "vendor-04",
+      "month": "2026-04",
+      "compositeRiskScore": 39
+    },
+    {
+      "vendorId": "vendor-04",
+      "month": "2026-05",
+      "compositeRiskScore": 35
+    },
+    {
+      "vendorId": "vendor-04",
+      "month": "2026-06",
+      "compositeRiskScore": 32
+    },
+    {
+      "vendorId": "vendor-04",
+      "month": "2026-07",
+      "compositeRiskScore": 38
+    },
+    {
+      "vendorId": "vendor-04",
+      "month": "2026-08",
+      "compositeRiskScore": 38
+    },
+    {
+      "vendorId": "vendor-04",
+      "month": "2026-09",
+      "compositeRiskScore": 32
+    },
+    {
+      "vendorId": "vendor-05",
+      "month": "2025-10",
+      "compositeRiskScore": 82
+    },
+    {
+      "vendorId": "vendor-05",
+      "month": "2025-11",
+      "compositeRiskScore": 88
+    },
+    {
+      "vendorId": "vendor-05",
+      "month": "2025-12",
+      "compositeRiskScore": 87
+    },
+    {
+      "vendorId": "vendor-05",
+      "month": "2026-01",
+      "compositeRiskScore": 82
+    },
+    {
+      "vendorId": "vendor-05",
+      "month": "2026-02",
+      "compositeRiskScore": 80
+    },
+    {
+      "vendorId": "vendor-05",
+      "month": "2026-03",
+      "compositeRiskScore": 87
+    },
+    {
+      "vendorId": "vendor-05",
+      "month": "2026-04",
+      "compositeRiskScore": 83
+    },
+    {
+      "vendorId": "vendor-05",
+      "month": "2026-05",
+      "compositeRiskScore": 80
+    },
+    {
+      "vendorId": "vendor-05",
+      "month": "2026-06",
+      "compositeRiskScore": 80
+    },
+    {
+      "vendorId": "vendor-05",
+      "month": "2026-07",
+      "compositeRiskScore": 83
+    },
+    {
+      "vendorId": "vendor-05",
+      "month": "2026-08",
+      "compositeRiskScore": 88
+    },
+    {
+      "vendorId": "vendor-05",
+      "month": "2026-09",
+      "compositeRiskScore": 82
+    },
+    {
+      "vendorId": "vendor-06",
+      "month": "2025-10",
+      "compositeRiskScore": 56
+    },
+    {
+      "vendorId": "vendor-06",
+      "month": "2025-11",
+      "compositeRiskScore": 58
+    },
+    {
+      "vendorId": "vendor-06",
+      "month": "2025-12",
+      "compositeRiskScore": 54
+    },
+    {
+      "vendorId": "vendor-06",
+      "month": "2026-01",
+      "compositeRiskScore": 57
+    },
+    {
+      "vendorId": "vendor-06",
+      "month": "2026-02",
+      "compositeRiskScore": 51
+    },
+    {
+      "vendorId": "vendor-06",
+      "month": "2026-03",
+      "compositeRiskScore": 52
+    },
+    {
+      "vendorId": "vendor-06",
+      "month": "2026-04",
+      "compositeRiskScore": 52
+    },
+    {
+      "vendorId": "vendor-06",
+      "month": "2026-05",
+      "compositeRiskScore": 51
+    },
+    {
+      "vendorId": "vendor-06",
+      "month": "2026-06",
+      "compositeRiskScore": 55
+    },
+    {
+      "vendorId": "vendor-06",
+      "month": "2026-07",
+      "compositeRiskScore": 56
+    },
+    {
+      "vendorId": "vendor-06",
+      "month": "2026-08",
+      "compositeRiskScore": 50
+    },
+    {
+      "vendorId": "vendor-06",
+      "month": "2026-09",
+      "compositeRiskScore": 58
+    },
+    {
+      "vendorId": "vendor-07",
+      "month": "2025-10",
+      "compositeRiskScore": 49
+    },
+    {
+      "vendorId": "vendor-07",
+      "month": "2025-11",
+      "compositeRiskScore": 51
+    },
+    {
+      "vendorId": "vendor-07",
+      "month": "2025-12",
+      "compositeRiskScore": 49
+    },
+    {
+      "vendorId": "vendor-07",
+      "month": "2026-01",
+      "compositeRiskScore": 51
+    },
+    {
+      "vendorId": "vendor-07",
+      "month": "2026-02",
+      "compositeRiskScore": 54
+    },
+    {
+      "vendorId": "vendor-07",
+      "month": "2026-03",
+      "compositeRiskScore": 46
+    },
+    {
+      "vendorId": "vendor-07",
+      "month": "2026-04",
+      "compositeRiskScore": 54
+    },
+    {
+      "vendorId": "vendor-07",
+      "month": "2026-05",
+      "compositeRiskScore": 55
+    },
+    {
+      "vendorId": "vendor-07",
+      "month": "2026-06",
+      "compositeRiskScore": 54
+    },
+    {
+      "vendorId": "vendor-07",
+      "month": "2026-07",
+      "compositeRiskScore": 46
+    },
+    {
+      "vendorId": "vendor-07",
+      "month": "2026-08",
+      "compositeRiskScore": 55
+    },
+    {
+      "vendorId": "vendor-07",
+      "month": "2026-09",
+      "compositeRiskScore": 49
+    },
+    {
+      "vendorId": "vendor-08",
+      "month": "2025-10",
+      "compositeRiskScore": 63
+    },
+    {
+      "vendorId": "vendor-08",
+      "month": "2025-11",
+      "compositeRiskScore": 62
+    },
+    {
+      "vendorId": "vendor-08",
+      "month": "2025-12",
+      "compositeRiskScore": 63
+    },
+    {
+      "vendorId": "vendor-08",
+      "month": "2026-01",
+      "compositeRiskScore": 62
+    },
+    {
+      "vendorId": "vendor-08",
+      "month": "2026-02",
+      "compositeRiskScore": 59
+    },
+    {
+      "vendorId": "vendor-08",
+      "month": "2026-03",
+      "compositeRiskScore": 58
+    },
+    {
+      "vendorId": "vendor-08",
+      "month": "2026-04",
+      "compositeRiskScore": 60
+    },
+    {
+      "vendorId": "vendor-08",
+      "month": "2026-05",
+      "compositeRiskScore": 56
+    },
+    {
+      "vendorId": "vendor-08",
+      "month": "2026-06",
+      "compositeRiskScore": 63
+    },
+    {
+      "vendorId": "vendor-08",
+      "month": "2026-07",
+      "compositeRiskScore": 58
+    },
+    {
+      "vendorId": "vendor-08",
+      "month": "2026-08",
+      "compositeRiskScore": 64
+    },
+    {
+      "vendorId": "vendor-08",
+      "month": "2026-09",
+      "compositeRiskScore": 72
+    },
+    {
+      "vendorId": "vendor-09",
+      "month": "2025-10",
+      "compositeRiskScore": 61
+    },
+    {
+      "vendorId": "vendor-09",
+      "month": "2025-11",
+      "compositeRiskScore": 60
+    },
+    {
+      "vendorId": "vendor-09",
+      "month": "2025-12",
+      "compositeRiskScore": 61
+    },
+    {
+      "vendorId": "vendor-09",
+      "month": "2026-01",
+      "compositeRiskScore": 60
+    },
+    {
+      "vendorId": "vendor-09",
+      "month": "2026-02",
+      "compositeRiskScore": 56
+    },
+    {
+      "vendorId": "vendor-09",
+      "month": "2026-03",
+      "compositeRiskScore": 55
+    },
+    {
+      "vendorId": "vendor-09",
+      "month": "2026-04",
+      "compositeRiskScore": 55
+    },
+    {
+      "vendorId": "vendor-09",
+      "month": "2026-05",
+      "compositeRiskScore": 61
+    },
+    {
+      "vendorId": "vendor-09",
+      "month": "2026-06",
+      "compositeRiskScore": 63
+    },
+    {
+      "vendorId": "vendor-09",
+      "month": "2026-07",
+      "compositeRiskScore": 57
+    },
+    {
+      "vendorId": "vendor-09",
+      "month": "2026-08",
+      "compositeRiskScore": 60
+    },
+    {
+      "vendorId": "vendor-09",
+      "month": "2026-09",
+      "compositeRiskScore": 64
+    },
+    {
+      "vendorId": "vendor-10",
+      "month": "2025-10",
+      "compositeRiskScore": 49
+    },
+    {
+      "vendorId": "vendor-10",
+      "month": "2025-11",
+      "compositeRiskScore": 46
+    },
+    {
+      "vendorId": "vendor-10",
+      "month": "2025-12",
+      "compositeRiskScore": 54
+    },
+    {
+      "vendorId": "vendor-10",
+      "month": "2026-01",
+      "compositeRiskScore": 54
+    },
+    {
+      "vendorId": "vendor-10",
+      "month": "2026-02",
+      "compositeRiskScore": 54
+    },
+    {
+      "vendorId": "vendor-10",
+      "month": "2026-03",
+      "compositeRiskScore": 51
+    },
+    {
+      "vendorId": "vendor-10",
+      "month": "2026-04",
+      "compositeRiskScore": 45
+    },
+    {
+      "vendorId": "vendor-10",
+      "month": "2026-05",
+      "compositeRiskScore": 47
+    },
+    {
+      "vendorId": "vendor-10",
+      "month": "2026-06",
+      "compositeRiskScore": 54
+    },
+    {
+      "vendorId": "vendor-10",
+      "month": "2026-07",
+      "compositeRiskScore": 48
+    },
+    {
+      "vendorId": "vendor-10",
+      "month": "2026-08",
+      "compositeRiskScore": 52
+    },
+    {
+      "vendorId": "vendor-10",
+      "month": "2026-09",
+      "compositeRiskScore": 49
+    },
+    {
+      "vendorId": "vendor-11",
+      "month": "2025-10",
+      "compositeRiskScore": 47
+    },
+    {
+      "vendorId": "vendor-11",
+      "month": "2025-11",
+      "compositeRiskScore": 38
+    },
+    {
+      "vendorId": "vendor-11",
+      "month": "2025-12",
+      "compositeRiskScore": 38
+    },
+    {
+      "vendorId": "vendor-11",
+      "month": "2026-01",
+      "compositeRiskScore": 42
+    },
+    {
+      "vendorId": "vendor-11",
+      "month": "2026-02",
+      "compositeRiskScore": 38
+    },
+    {
+      "vendorId": "vendor-11",
+      "month": "2026-03",
+      "compositeRiskScore": 47
+    },
+    {
+      "vendorId": "vendor-11",
+      "month": "2026-04",
+      "compositeRiskScore": 44
+    },
+    {
+      "vendorId": "vendor-11",
+      "month": "2026-05",
+      "compositeRiskScore": 38
+    },
+    {
+      "vendorId": "vendor-11",
+      "month": "2026-06",
+      "compositeRiskScore": 42
+    },
+    {
+      "vendorId": "vendor-11",
+      "month": "2026-07",
+      "compositeRiskScore": 43
+    },
+    {
+      "vendorId": "vendor-11",
+      "month": "2026-08",
+      "compositeRiskScore": 40
+    },
+    {
+      "vendorId": "vendor-11",
+      "month": "2026-09",
+      "compositeRiskScore": 52
+    },
+    {
+      "vendorId": "vendor-12",
+      "month": "2025-10",
+      "compositeRiskScore": 57
+    },
+    {
+      "vendorId": "vendor-12",
+      "month": "2025-11",
+      "compositeRiskScore": 58
+    },
+    {
+      "vendorId": "vendor-12",
+      "month": "2025-12",
+      "compositeRiskScore": 55
+    },
+    {
+      "vendorId": "vendor-12",
+      "month": "2026-01",
+      "compositeRiskScore": 52
+    },
+    {
+      "vendorId": "vendor-12",
+      "month": "2026-02",
+      "compositeRiskScore": 53
+    },
+    {
+      "vendorId": "vendor-12",
+      "month": "2026-03",
+      "compositeRiskScore": 53
+    },
+    {
+      "vendorId": "vendor-12",
+      "month": "2026-04",
+      "compositeRiskScore": 58
+    },
+    {
+      "vendorId": "vendor-12",
+      "month": "2026-05",
+      "compositeRiskScore": 50
+    },
+    {
+      "vendorId": "vendor-12",
+      "month": "2026-06",
+      "compositeRiskScore": 54
+    },
+    {
+      "vendorId": "vendor-12",
+      "month": "2026-07",
+      "compositeRiskScore": 54
+    },
+    {
+      "vendorId": "vendor-12",
+      "month": "2026-08",
+      "compositeRiskScore": 54
+    },
+    {
+      "vendorId": "vendor-12",
+      "month": "2026-09",
+      "compositeRiskScore": 52
+    },
+    {
+      "vendorId": "vendor-13",
+      "month": "2025-10",
+      "compositeRiskScore": 32
+    },
+    {
+      "vendorId": "vendor-13",
+      "month": "2025-11",
+      "compositeRiskScore": 31
+    },
+    {
+      "vendorId": "vendor-13",
+      "month": "2025-12",
+      "compositeRiskScore": 30
+    },
+    {
+      "vendorId": "vendor-13",
+      "month": "2026-01",
+      "compositeRiskScore": 33
+    },
+    {
+      "vendorId": "vendor-13",
+      "month": "2026-02",
+      "compositeRiskScore": 35
+    },
+    {
+      "vendorId": "vendor-13",
+      "month": "2026-03",
+      "compositeRiskScore": 29
+    },
+    {
+      "vendorId": "vendor-13",
+      "month": "2026-04",
+      "compositeRiskScore": 29
+    },
+    {
+      "vendorId": "vendor-13",
+      "month": "2026-05",
+      "compositeRiskScore": 30
+    },
+    {
+      "vendorId": "vendor-13",
+      "month": "2026-06",
+      "compositeRiskScore": 31
+    },
+    {
+      "vendorId": "vendor-13",
+      "month": "2026-07",
+      "compositeRiskScore": 34
+    },
+    {
+      "vendorId": "vendor-13",
+      "month": "2026-08",
+      "compositeRiskScore": 28
+    },
+    {
+      "vendorId": "vendor-13",
+      "month": "2026-09",
+      "compositeRiskScore": 37
+    },
+    {
+      "vendorId": "vendor-14",
+      "month": "2025-10",
+      "compositeRiskScore": 53
+    },
+    {
+      "vendorId": "vendor-14",
+      "month": "2025-11",
+      "compositeRiskScore": 48
+    },
+    {
+      "vendorId": "vendor-14",
+      "month": "2025-12",
+      "compositeRiskScore": 50
+    },
+    {
+      "vendorId": "vendor-14",
+      "month": "2026-01",
+      "compositeRiskScore": 49
+    },
+    {
+      "vendorId": "vendor-14",
+      "month": "2026-02",
+      "compositeRiskScore": 48
+    },
+    {
+      "vendorId": "vendor-14",
+      "month": "2026-03",
+      "compositeRiskScore": 51
+    },
+    {
+      "vendorId": "vendor-14",
+      "month": "2026-04",
+      "compositeRiskScore": 54
+    },
+    {
+      "vendorId": "vendor-14",
+      "month": "2026-05",
+      "compositeRiskScore": 48
+    },
+    {
+      "vendorId": "vendor-14",
+      "month": "2026-06",
+      "compositeRiskScore": 47
+    },
+    {
+      "vendorId": "vendor-14",
+      "month": "2026-07",
+      "compositeRiskScore": 49
+    },
+    {
+      "vendorId": "vendor-14",
+      "month": "2026-08",
+      "compositeRiskScore": 50
+    },
+    {
+      "vendorId": "vendor-14",
+      "month": "2026-09",
+      "compositeRiskScore": 62
+    },
+    {
+      "vendorId": "vendor-15",
+      "month": "2025-10",
+      "compositeRiskScore": 87
+    },
+    {
+      "vendorId": "vendor-15",
+      "month": "2025-11",
+      "compositeRiskScore": 86
+    },
+    {
+      "vendorId": "vendor-15",
+      "month": "2025-12",
+      "compositeRiskScore": 87
+    },
+    {
+      "vendorId": "vendor-15",
+      "month": "2026-01",
+      "compositeRiskScore": 88
+    },
+    {
+      "vendorId": "vendor-15",
+      "month": "2026-02",
+      "compositeRiskScore": 84
+    },
+    {
+      "vendorId": "vendor-15",
+      "month": "2026-03",
+      "compositeRiskScore": 87
+    },
+    {
+      "vendorId": "vendor-15",
+      "month": "2026-04",
+      "compositeRiskScore": 83
+    },
+    {
+      "vendorId": "vendor-15",
+      "month": "2026-05",
+      "compositeRiskScore": 83
+    },
+    {
+      "vendorId": "vendor-15",
+      "month": "2026-06",
+      "compositeRiskScore": 88
+    },
+    {
+      "vendorId": "vendor-15",
+      "month": "2026-07",
+      "compositeRiskScore": 85
+    },
+    {
+      "vendorId": "vendor-15",
+      "month": "2026-08",
+      "compositeRiskScore": 89
+    },
+    {
+      "vendorId": "vendor-15",
+      "month": "2026-09",
+      "compositeRiskScore": 86
+    },
+    {
+      "vendorId": "vendor-16",
+      "month": "2025-10",
+      "compositeRiskScore": 35
+    },
+    {
+      "vendorId": "vendor-16",
+      "month": "2025-11",
+      "compositeRiskScore": 32
+    },
+    {
+      "vendorId": "vendor-16",
+      "month": "2025-12",
+      "compositeRiskScore": 38
+    },
+    {
+      "vendorId": "vendor-16",
+      "month": "2026-01",
+      "compositeRiskScore": 31
+    },
+    {
+      "vendorId": "vendor-16",
+      "month": "2026-02",
+      "compositeRiskScore": 35
+    },
+    {
+      "vendorId": "vendor-16",
+      "month": "2026-03",
+      "compositeRiskScore": 38
+    },
+    {
+      "vendorId": "vendor-16",
+      "month": "2026-04",
+      "compositeRiskScore": 34
+    },
+    {
+      "vendorId": "vendor-16",
+      "month": "2026-05",
+      "compositeRiskScore": 32
+    },
+    {
+      "vendorId": "vendor-16",
+      "month": "2026-06",
+      "compositeRiskScore": 37
+    },
+    {
+      "vendorId": "vendor-16",
+      "month": "2026-07",
+      "compositeRiskScore": 35
+    },
+    {
+      "vendorId": "vendor-16",
+      "month": "2026-08",
+      "compositeRiskScore": 37
+    },
+    {
+      "vendorId": "vendor-16",
+      "month": "2026-09",
+      "compositeRiskScore": 44
+    },
+    {
+      "vendorId": "vendor-17",
+      "month": "2025-10",
+      "compositeRiskScore": 48
+    },
+    {
+      "vendorId": "vendor-17",
+      "month": "2025-11",
+      "compositeRiskScore": 46
+    },
+    {
+      "vendorId": "vendor-17",
+      "month": "2025-12",
+      "compositeRiskScore": 47
+    },
+    {
+      "vendorId": "vendor-17",
+      "month": "2026-01",
+      "compositeRiskScore": 44
+    },
+    {
+      "vendorId": "vendor-17",
+      "month": "2026-02",
+      "compositeRiskScore": 52
+    },
+    {
+      "vendorId": "vendor-17",
+      "month": "2026-03",
+      "compositeRiskScore": 51
+    },
+    {
+      "vendorId": "vendor-17",
+      "month": "2026-04",
+      "compositeRiskScore": 45
+    },
+    {
+      "vendorId": "vendor-17",
+      "month": "2026-05",
+      "compositeRiskScore": 52
+    },
+    {
+      "vendorId": "vendor-17",
+      "month": "2026-06",
+      "compositeRiskScore": 51
+    },
+    {
+      "vendorId": "vendor-17",
+      "month": "2026-07",
+      "compositeRiskScore": 45
+    },
+    {
+      "vendorId": "vendor-17",
+      "month": "2026-08",
+      "compositeRiskScore": 49
+    },
+    {
+      "vendorId": "vendor-17",
+      "month": "2026-09",
+      "compositeRiskScore": 57
+    },
+    {
+      "vendorId": "vendor-18",
+      "month": "2025-10",
+      "compositeRiskScore": 72
+    },
+    {
+      "vendorId": "vendor-18",
+      "month": "2025-11",
+      "compositeRiskScore": 70
+    },
+    {
+      "vendorId": "vendor-18",
+      "month": "2025-12",
+      "compositeRiskScore": 72
+    },
+    {
+      "vendorId": "vendor-18",
+      "month": "2026-01",
+      "compositeRiskScore": 66
+    },
+    {
+      "vendorId": "vendor-18",
+      "month": "2026-02",
+      "compositeRiskScore": 74
+    },
+    {
+      "vendorId": "vendor-18",
+      "month": "2026-03",
+      "compositeRiskScore": 68
+    },
+    {
+      "vendorId": "vendor-18",
+      "month": "2026-04",
+      "compositeRiskScore": 68
+    },
+    {
+      "vendorId": "vendor-18",
+      "month": "2026-05",
+      "compositeRiskScore": 69
+    },
+    {
+      "vendorId": "vendor-18",
+      "month": "2026-06",
+      "compositeRiskScore": 70
+    },
+    {
+      "vendorId": "vendor-18",
+      "month": "2026-07",
+      "compositeRiskScore": 68
+    },
+    {
+      "vendorId": "vendor-18",
+      "month": "2026-08",
+      "compositeRiskScore": 70
+    },
+    {
+      "vendorId": "vendor-18",
+      "month": "2026-09",
+      "compositeRiskScore": 71
+    },
+    {
+      "vendorId": "vendor-19",
+      "month": "2025-10",
+      "compositeRiskScore": 76
+    },
+    {
+      "vendorId": "vendor-19",
+      "month": "2025-11",
+      "compositeRiskScore": 79
+    },
+    {
+      "vendorId": "vendor-19",
+      "month": "2025-12",
+      "compositeRiskScore": 75
+    },
+    {
+      "vendorId": "vendor-19",
+      "month": "2026-01",
+      "compositeRiskScore": 79
+    },
+    {
+      "vendorId": "vendor-19",
+      "month": "2026-02",
+      "compositeRiskScore": 77
+    },
+    {
+      "vendorId": "vendor-19",
+      "month": "2026-03",
+      "compositeRiskScore": 75
+    },
+    {
+      "vendorId": "vendor-19",
+      "month": "2026-04",
+      "compositeRiskScore": 75
+    },
+    {
+      "vendorId": "vendor-19",
+      "month": "2026-05",
+      "compositeRiskScore": 75
+    },
+    {
+      "vendorId": "vendor-19",
+      "month": "2026-06",
+      "compositeRiskScore": 79
+    },
+    {
+      "vendorId": "vendor-19",
+      "month": "2026-07",
+      "compositeRiskScore": 75
+    },
+    {
+      "vendorId": "vendor-19",
+      "month": "2026-08",
+      "compositeRiskScore": 75
+    },
+    {
+      "vendorId": "vendor-19",
+      "month": "2026-09",
+      "compositeRiskScore": 88
+    },
+    {
+      "vendorId": "vendor-20",
+      "month": "2025-10",
+      "compositeRiskScore": 58
+    },
+    {
+      "vendorId": "vendor-20",
+      "month": "2025-11",
+      "compositeRiskScore": 57
+    },
+    {
+      "vendorId": "vendor-20",
+      "month": "2025-12",
+      "compositeRiskScore": 59
+    },
+    {
+      "vendorId": "vendor-20",
+      "month": "2026-01",
+      "compositeRiskScore": 60
+    },
+    {
+      "vendorId": "vendor-20",
+      "month": "2026-02",
+      "compositeRiskScore": 58
+    },
+    {
+      "vendorId": "vendor-20",
+      "month": "2026-03",
+      "compositeRiskScore": 57
+    },
+    {
+      "vendorId": "vendor-20",
+      "month": "2026-04",
+      "compositeRiskScore": 63
+    },
+    {
+      "vendorId": "vendor-20",
+      "month": "2026-05",
+      "compositeRiskScore": 55
+    },
+    {
+      "vendorId": "vendor-20",
+      "month": "2026-06",
+      "compositeRiskScore": 60
+    },
+    {
+      "vendorId": "vendor-20",
+      "month": "2026-07",
+      "compositeRiskScore": 58
+    },
+    {
+      "vendorId": "vendor-20",
+      "month": "2026-08",
+      "compositeRiskScore": 59
+    },
+    {
+      "vendorId": "vendor-20",
+      "month": "2026-09",
+      "compositeRiskScore": 70
+    },
+    {
+      "vendorId": "vendor-21",
+      "month": "2025-10",
+      "compositeRiskScore": 83
+    },
+    {
+      "vendorId": "vendor-21",
+      "month": "2025-11",
+      "compositeRiskScore": 76
+    },
+    {
+      "vendorId": "vendor-21",
+      "month": "2025-12",
+      "compositeRiskScore": 79
+    },
+    {
+      "vendorId": "vendor-21",
+      "month": "2026-01",
+      "compositeRiskScore": 81
+    },
+    {
+      "vendorId": "vendor-21",
+      "month": "2026-02",
+      "compositeRiskScore": 75
+    },
+    {
+      "vendorId": "vendor-21",
+      "month": "2026-03",
+      "compositeRiskScore": 76
+    },
+    {
+      "vendorId": "vendor-21",
+      "month": "2026-04",
+      "compositeRiskScore": 74
+    },
+    {
+      "vendorId": "vendor-21",
+      "month": "2026-05",
+      "compositeRiskScore": 76
+    },
+    {
+      "vendorId": "vendor-21",
+      "month": "2026-06",
+      "compositeRiskScore": 76
+    },
+    {
+      "vendorId": "vendor-21",
+      "month": "2026-07",
+      "compositeRiskScore": 74
+    },
+    {
+      "vendorId": "vendor-21",
+      "month": "2026-08",
+      "compositeRiskScore": 79
+    },
+    {
+      "vendorId": "vendor-21",
+      "month": "2026-09",
+      "compositeRiskScore": 82
+    },
+    {
+      "vendorId": "vendor-22",
+      "month": "2025-10",
+      "compositeRiskScore": 55
+    },
+    {
+      "vendorId": "vendor-22",
+      "month": "2025-11",
+      "compositeRiskScore": 56
+    },
+    {
+      "vendorId": "vendor-22",
+      "month": "2025-12",
+      "compositeRiskScore": 48
+    },
+    {
+      "vendorId": "vendor-22",
+      "month": "2026-01",
+      "compositeRiskScore": 53
+    },
+    {
+      "vendorId": "vendor-22",
+      "month": "2026-02",
+      "compositeRiskScore": 57
+    },
+    {
+      "vendorId": "vendor-22",
+      "month": "2026-03",
+      "compositeRiskScore": 51
+    },
+    {
+      "vendorId": "vendor-22",
+      "month": "2026-04",
+      "compositeRiskScore": 50
+    },
+    {
+      "vendorId": "vendor-22",
+      "month": "2026-05",
+      "compositeRiskScore": 55
+    },
+    {
+      "vendorId": "vendor-22",
+      "month": "2026-06",
+      "compositeRiskScore": 48
+    },
+    {
+      "vendorId": "vendor-22",
+      "month": "2026-07",
+      "compositeRiskScore": 56
+    },
+    {
+      "vendorId": "vendor-22",
+      "month": "2026-08",
+      "compositeRiskScore": 51
+    },
+    {
+      "vendorId": "vendor-22",
+      "month": "2026-09",
+      "compositeRiskScore": 63
+    },
+    {
+      "vendorId": "vendor-23",
+      "month": "2025-10",
+      "compositeRiskScore": 20
+    },
+    {
+      "vendorId": "vendor-23",
+      "month": "2025-11",
+      "compositeRiskScore": 21
+    },
+    {
+      "vendorId": "vendor-23",
+      "month": "2025-12",
+      "compositeRiskScore": 20
+    },
+    {
+      "vendorId": "vendor-23",
+      "month": "2026-01",
+      "compositeRiskScore": 25
+    },
+    {
+      "vendorId": "vendor-23",
+      "month": "2026-02",
+      "compositeRiskScore": 21
+    },
+    {
+      "vendorId": "vendor-23",
+      "month": "2026-03",
+      "compositeRiskScore": 22
+    },
+    {
+      "vendorId": "vendor-23",
+      "month": "2026-04",
+      "compositeRiskScore": 20
+    },
+    {
+      "vendorId": "vendor-23",
+      "month": "2026-05",
+      "compositeRiskScore": 20
+    },
+    {
+      "vendorId": "vendor-23",
+      "month": "2026-06",
+      "compositeRiskScore": 23
+    },
+    {
+      "vendorId": "vendor-23",
+      "month": "2026-07",
+      "compositeRiskScore": 20
+    },
+    {
+      "vendorId": "vendor-23",
+      "month": "2026-08",
+      "compositeRiskScore": 20
+    },
+    {
+      "vendorId": "vendor-23",
+      "month": "2026-09",
+      "compositeRiskScore": 29
+    },
+    {
+      "vendorId": "vendor-24",
+      "month": "2025-10",
+      "compositeRiskScore": 60
+    },
+    {
+      "vendorId": "vendor-24",
+      "month": "2025-11",
+      "compositeRiskScore": 59
+    },
+    {
+      "vendorId": "vendor-24",
+      "month": "2025-12",
+      "compositeRiskScore": 60
+    },
+    {
+      "vendorId": "vendor-24",
+      "month": "2026-01",
+      "compositeRiskScore": 51
+    },
+    {
+      "vendorId": "vendor-24",
+      "month": "2026-02",
+      "compositeRiskScore": 58
+    },
+    {
+      "vendorId": "vendor-24",
+      "month": "2026-03",
+      "compositeRiskScore": 56
+    },
+    {
+      "vendorId": "vendor-24",
+      "month": "2026-04",
+      "compositeRiskScore": 53
+    },
+    {
+      "vendorId": "vendor-24",
+      "month": "2026-05",
+      "compositeRiskScore": 59
+    },
+    {
+      "vendorId": "vendor-24",
+      "month": "2026-06",
+      "compositeRiskScore": 56
+    },
+    {
+      "vendorId": "vendor-24",
+      "month": "2026-07",
+      "compositeRiskScore": 57
+    },
+    {
+      "vendorId": "vendor-24",
+      "month": "2026-08",
+      "compositeRiskScore": 54
+    },
+    {
+      "vendorId": "vendor-24",
+      "month": "2026-09",
+      "compositeRiskScore": 60
+    },
+    {
+      "vendorId": "vendor-25",
+      "month": "2025-10",
+      "compositeRiskScore": 43
+    },
+    {
+      "vendorId": "vendor-25",
+      "month": "2025-11",
+      "compositeRiskScore": 48
+    },
+    {
+      "vendorId": "vendor-25",
+      "month": "2025-12",
+      "compositeRiskScore": 46
+    },
+    {
+      "vendorId": "vendor-25",
+      "month": "2026-01",
+      "compositeRiskScore": 51
+    },
+    {
+      "vendorId": "vendor-25",
+      "month": "2026-02",
+      "compositeRiskScore": 51
+    },
+    {
+      "vendorId": "vendor-25",
+      "month": "2026-03",
+      "compositeRiskScore": 42
+    },
+    {
+      "vendorId": "vendor-25",
+      "month": "2026-04",
+      "compositeRiskScore": 48
+    },
+    {
+      "vendorId": "vendor-25",
+      "month": "2026-05",
+      "compositeRiskScore": 48
+    },
+    {
+      "vendorId": "vendor-25",
+      "month": "2026-06",
+      "compositeRiskScore": 42
+    },
+    {
+      "vendorId": "vendor-25",
+      "month": "2026-07",
+      "compositeRiskScore": 49
+    },
+    {
+      "vendorId": "vendor-25",
+      "month": "2026-08",
+      "compositeRiskScore": 44
+    },
+    {
+      "vendorId": "vendor-25",
+      "month": "2026-09",
+      "compositeRiskScore": 40
+    },
+    {
+      "vendorId": "vendor-26",
+      "month": "2025-10",
+      "compositeRiskScore": 88
+    },
+    {
+      "vendorId": "vendor-26",
+      "month": "2025-11",
+      "compositeRiskScore": 84
+    },
+    {
+      "vendorId": "vendor-26",
+      "month": "2025-12",
+      "compositeRiskScore": 80
+    },
+    {
+      "vendorId": "vendor-26",
+      "month": "2026-01",
+      "compositeRiskScore": 84
+    },
+    {
+      "vendorId": "vendor-26",
+      "month": "2026-02",
+      "compositeRiskScore": 88
+    },
+    {
+      "vendorId": "vendor-26",
+      "month": "2026-03",
+      "compositeRiskScore": 80
+    },
+    {
+      "vendorId": "vendor-26",
+      "month": "2026-04",
+      "compositeRiskScore": 82
+    },
+    {
+      "vendorId": "vendor-26",
+      "month": "2026-05",
+      "compositeRiskScore": 81
+    },
+    {
+      "vendorId": "vendor-26",
+      "month": "2026-06",
+      "compositeRiskScore": 83
+    },
+    {
+      "vendorId": "vendor-26",
+      "month": "2026-07",
+      "compositeRiskScore": 82
+    },
+    {
+      "vendorId": "vendor-26",
+      "month": "2026-08",
+      "compositeRiskScore": 81
+    },
+    {
+      "vendorId": "vendor-26",
+      "month": "2026-09",
+      "compositeRiskScore": 81
+    },
+    {
+      "vendorId": "vendor-27",
+      "month": "2025-10",
+      "compositeRiskScore": 32
+    },
+    {
+      "vendorId": "vendor-27",
+      "month": "2025-11",
+      "compositeRiskScore": 31
+    },
+    {
+      "vendorId": "vendor-27",
+      "month": "2025-12",
+      "compositeRiskScore": 28
+    },
+    {
+      "vendorId": "vendor-27",
+      "month": "2026-01",
+      "compositeRiskScore": 31
+    },
+    {
+      "vendorId": "vendor-27",
+      "month": "2026-02",
+      "compositeRiskScore": 24
+    },
+    {
+      "vendorId": "vendor-27",
+      "month": "2026-03",
+      "compositeRiskScore": 26
+    },
+    {
+      "vendorId": "vendor-27",
+      "month": "2026-04",
+      "compositeRiskScore": 32
+    },
+    {
+      "vendorId": "vendor-27",
+      "month": "2026-05",
+      "compositeRiskScore": 24
+    },
+    {
+      "vendorId": "vendor-27",
+      "month": "2026-06",
+      "compositeRiskScore": 28
+    },
+    {
+      "vendorId": "vendor-27",
+      "month": "2026-07",
+      "compositeRiskScore": 24
+    },
+    {
+      "vendorId": "vendor-27",
+      "month": "2026-08",
+      "compositeRiskScore": 28
+    },
+    {
+      "vendorId": "vendor-27",
+      "month": "2026-09",
+      "compositeRiskScore": 33
+    },
+    {
+      "vendorId": "vendor-28",
+      "month": "2025-10",
+      "compositeRiskScore": 59
+    },
+    {
+      "vendorId": "vendor-28",
+      "month": "2025-11",
+      "compositeRiskScore": 59
+    },
+    {
+      "vendorId": "vendor-28",
+      "month": "2025-12",
+      "compositeRiskScore": 59
+    },
+    {
+      "vendorId": "vendor-28",
+      "month": "2026-01",
+      "compositeRiskScore": 62
+    },
+    {
+      "vendorId": "vendor-28",
+      "month": "2026-02",
+      "compositeRiskScore": 58
+    },
+    {
+      "vendorId": "vendor-28",
+      "month": "2026-03",
+      "compositeRiskScore": 62
+    },
+    {
+      "vendorId": "vendor-28",
+      "month": "2026-04",
+      "compositeRiskScore": 55
+    },
+    {
+      "vendorId": "vendor-28",
+      "month": "2026-05",
+      "compositeRiskScore": 63
+    },
+    {
+      "vendorId": "vendor-28",
+      "month": "2026-06",
+      "compositeRiskScore": 62
+    },
+    {
+      "vendorId": "vendor-28",
+      "month": "2026-07",
+      "compositeRiskScore": 64
+    },
+    {
+      "vendorId": "vendor-28",
+      "month": "2026-08",
+      "compositeRiskScore": 64
+    },
+    {
+      "vendorId": "vendor-28",
+      "month": "2026-09",
+      "compositeRiskScore": 73
+    },
+    {
+      "vendorId": "vendor-29",
+      "month": "2025-10",
+      "compositeRiskScore": 75
+    },
+    {
+      "vendorId": "vendor-29",
+      "month": "2025-11",
+      "compositeRiskScore": 70
+    },
+    {
+      "vendorId": "vendor-29",
+      "month": "2025-12",
+      "compositeRiskScore": 70
+    },
+    {
+      "vendorId": "vendor-29",
+      "month": "2026-01",
+      "compositeRiskScore": 70
+    },
+    {
+      "vendorId": "vendor-29",
+      "month": "2026-02",
+      "compositeRiskScore": 69
+    },
+    {
+      "vendorId": "vendor-29",
+      "month": "2026-03",
+      "compositeRiskScore": 72
+    },
+    {
+      "vendorId": "vendor-29",
+      "month": "2026-04",
+      "compositeRiskScore": 71
+    },
+    {
+      "vendorId": "vendor-29",
+      "month": "2026-05",
+      "compositeRiskScore": 75
+    },
+    {
+      "vendorId": "vendor-29",
+      "month": "2026-06",
+      "compositeRiskScore": 72
+    },
+    {
+      "vendorId": "vendor-29",
+      "month": "2026-07",
+      "compositeRiskScore": 73
+    },
+    {
+      "vendorId": "vendor-29",
+      "month": "2026-08",
+      "compositeRiskScore": 69
+    },
+    {
+      "vendorId": "vendor-29",
+      "month": "2026-09",
+      "compositeRiskScore": 79
+    },
+    {
+      "vendorId": "vendor-30",
+      "month": "2025-10",
+      "compositeRiskScore": 64
+    },
+    {
+      "vendorId": "vendor-30",
+      "month": "2025-11",
+      "compositeRiskScore": 71
+    },
+    {
+      "vendorId": "vendor-30",
+      "month": "2025-12",
+      "compositeRiskScore": 64
+    },
+    {
+      "vendorId": "vendor-30",
+      "month": "2026-01",
+      "compositeRiskScore": 63
+    },
+    {
+      "vendorId": "vendor-30",
+      "month": "2026-02",
+      "compositeRiskScore": 64
+    },
+    {
+      "vendorId": "vendor-30",
+      "month": "2026-03",
+      "compositeRiskScore": 70
+    },
+    {
+      "vendorId": "vendor-30",
+      "month": "2026-04",
+      "compositeRiskScore": 68
+    },
+    {
+      "vendorId": "vendor-30",
+      "month": "2026-05",
+      "compositeRiskScore": 70
+    },
+    {
+      "vendorId": "vendor-30",
+      "month": "2026-06",
+      "compositeRiskScore": 71
+    },
+    {
+      "vendorId": "vendor-30",
+      "month": "2026-07",
+      "compositeRiskScore": 64
+    },
+    {
+      "vendorId": "vendor-30",
+      "month": "2026-08",
+      "compositeRiskScore": 63
+    },
+    {
+      "vendorId": "vendor-30",
+      "month": "2026-09",
+      "compositeRiskScore": 69
+    },
+    {
+      "vendorId": "vendor-31",
+      "month": "2025-10",
+      "compositeRiskScore": 44
+    },
+    {
+      "vendorId": "vendor-31",
+      "month": "2025-11",
+      "compositeRiskScore": 42
+    },
+    {
+      "vendorId": "vendor-31",
+      "month": "2025-12",
+      "compositeRiskScore": 42
+    },
+    {
+      "vendorId": "vendor-31",
+      "month": "2026-01",
+      "compositeRiskScore": 43
+    },
+    {
+      "vendorId": "vendor-31",
+      "month": "2026-02",
+      "compositeRiskScore": 43
+    },
+    {
+      "vendorId": "vendor-31",
+      "month": "2026-03",
+      "compositeRiskScore": 45
+    },
+    {
+      "vendorId": "vendor-31",
+      "month": "2026-04",
+      "compositeRiskScore": 45
+    },
+    {
+      "vendorId": "vendor-31",
+      "month": "2026-05",
+      "compositeRiskScore": 37
+    },
+    {
+      "vendorId": "vendor-31",
+      "month": "2026-06",
+      "compositeRiskScore": 39
+    },
+    {
+      "vendorId": "vendor-31",
+      "month": "2026-07",
+      "compositeRiskScore": 44
+    },
+    {
+      "vendorId": "vendor-31",
+      "month": "2026-08",
+      "compositeRiskScore": 40
+    },
+    {
+      "vendorId": "vendor-31",
+      "month": "2026-09",
+      "compositeRiskScore": 43
+    },
+    {
+      "vendorId": "vendor-32",
+      "month": "2025-10",
+      "compositeRiskScore": 60
+    },
+    {
+      "vendorId": "vendor-32",
+      "month": "2025-11",
+      "compositeRiskScore": 53
+    },
+    {
+      "vendorId": "vendor-32",
+      "month": "2025-12",
+      "compositeRiskScore": 61
+    },
+    {
+      "vendorId": "vendor-32",
+      "month": "2026-01",
+      "compositeRiskScore": 57
+    },
+    {
+      "vendorId": "vendor-32",
+      "month": "2026-02",
+      "compositeRiskScore": 58
+    },
+    {
+      "vendorId": "vendor-32",
+      "month": "2026-03",
+      "compositeRiskScore": 59
+    },
+    {
+      "vendorId": "vendor-32",
+      "month": "2026-04",
+      "compositeRiskScore": 60
+    },
+    {
+      "vendorId": "vendor-32",
+      "month": "2026-05",
+      "compositeRiskScore": 54
+    },
+    {
+      "vendorId": "vendor-32",
+      "month": "2026-06",
+      "compositeRiskScore": 59
+    },
+    {
+      "vendorId": "vendor-32",
+      "month": "2026-07",
+      "compositeRiskScore": 53
+    },
+    {
+      "vendorId": "vendor-32",
+      "month": "2026-08",
+      "compositeRiskScore": 56
+    },
+    {
+      "vendorId": "vendor-32",
+      "month": "2026-09",
+      "compositeRiskScore": 55
+    },
+    {
+      "vendorId": "vendor-33",
+      "month": "2025-10",
+      "compositeRiskScore": 93
+    },
+    {
+      "vendorId": "vendor-33",
+      "month": "2025-11",
+      "compositeRiskScore": 88
+    },
+    {
+      "vendorId": "vendor-33",
+      "month": "2025-12",
+      "compositeRiskScore": 90
+    },
+    {
+      "vendorId": "vendor-33",
+      "month": "2026-01",
+      "compositeRiskScore": 90
+    },
+    {
+      "vendorId": "vendor-33",
+      "month": "2026-02",
+      "compositeRiskScore": 91
+    },
+    {
+      "vendorId": "vendor-33",
+      "month": "2026-03",
+      "compositeRiskScore": 90
+    },
+    {
+      "vendorId": "vendor-33",
+      "month": "2026-04",
+      "compositeRiskScore": 95
+    },
+    {
+      "vendorId": "vendor-33",
+      "month": "2026-05",
+      "compositeRiskScore": 92
+    },
+    {
+      "vendorId": "vendor-33",
+      "month": "2026-06",
+      "compositeRiskScore": 94
+    },
+    {
+      "vendorId": "vendor-33",
+      "month": "2026-07",
+      "compositeRiskScore": 88
+    },
+    {
+      "vendorId": "vendor-33",
+      "month": "2026-08",
+      "compositeRiskScore": 95
+    },
+    {
+      "vendorId": "vendor-33",
+      "month": "2026-09",
+      "compositeRiskScore": 86
+    },
+    {
+      "vendorId": "vendor-34",
+      "month": "2025-10",
+      "compositeRiskScore": 71
+    },
+    {
+      "vendorId": "vendor-34",
+      "month": "2025-11",
+      "compositeRiskScore": 71
+    },
+    {
+      "vendorId": "vendor-34",
+      "month": "2025-12",
+      "compositeRiskScore": 73
+    },
+    {
+      "vendorId": "vendor-34",
+      "month": "2026-01",
+      "compositeRiskScore": 73
+    },
+    {
+      "vendorId": "vendor-34",
+      "month": "2026-02",
+      "compositeRiskScore": 74
+    },
+    {
+      "vendorId": "vendor-34",
+      "month": "2026-03",
+      "compositeRiskScore": 73
+    },
+    {
+      "vendorId": "vendor-34",
+      "month": "2026-04",
+      "compositeRiskScore": 70
+    },
+    {
+      "vendorId": "vendor-34",
+      "month": "2026-05",
+      "compositeRiskScore": 70
+    },
+    {
+      "vendorId": "vendor-34",
+      "month": "2026-06",
+      "compositeRiskScore": 78
+    },
+    {
+      "vendorId": "vendor-34",
+      "month": "2026-07",
+      "compositeRiskScore": 74
+    },
+    {
+      "vendorId": "vendor-34",
+      "month": "2026-08",
+      "compositeRiskScore": 70
+    },
+    {
+      "vendorId": "vendor-34",
+      "month": "2026-09",
+      "compositeRiskScore": 67
+    },
+    {
+      "vendorId": "vendor-35",
+      "month": "2025-10",
+      "compositeRiskScore": 64
+    },
+    {
+      "vendorId": "vendor-35",
+      "month": "2025-11",
+      "compositeRiskScore": 60
+    },
+    {
+      "vendorId": "vendor-35",
+      "month": "2025-12",
+      "compositeRiskScore": 67
+    },
+    {
+      "vendorId": "vendor-35",
+      "month": "2026-01",
+      "compositeRiskScore": 62
+    },
+    {
+      "vendorId": "vendor-35",
+      "month": "2026-02",
+      "compositeRiskScore": 64
+    },
+    {
+      "vendorId": "vendor-35",
+      "month": "2026-03",
+      "compositeRiskScore": 63
+    },
+    {
+      "vendorId": "vendor-35",
+      "month": "2026-04",
+      "compositeRiskScore": 65
+    },
+    {
+      "vendorId": "vendor-35",
+      "month": "2026-05",
+      "compositeRiskScore": 60
+    },
+    {
+      "vendorId": "vendor-35",
+      "month": "2026-06",
+      "compositeRiskScore": 60
+    },
+    {
+      "vendorId": "vendor-35",
+      "month": "2026-07",
+      "compositeRiskScore": 68
+    },
+    {
+      "vendorId": "vendor-35",
+      "month": "2026-08",
+      "compositeRiskScore": 67
+    },
+    {
+      "vendorId": "vendor-35",
+      "month": "2026-09",
+      "compositeRiskScore": 57
+    },
+    {
+      "vendorId": "vendor-36",
+      "month": "2025-10",
+      "compositeRiskScore": 27
+    },
+    {
+      "vendorId": "vendor-36",
+      "month": "2025-11",
+      "compositeRiskScore": 25
+    },
+    {
+      "vendorId": "vendor-36",
+      "month": "2025-12",
+      "compositeRiskScore": 21
+    },
+    {
+      "vendorId": "vendor-36",
+      "month": "2026-01",
+      "compositeRiskScore": 25
+    },
+    {
+      "vendorId": "vendor-36",
+      "month": "2026-02",
+      "compositeRiskScore": 20
+    },
+    {
+      "vendorId": "vendor-36",
+      "month": "2026-03",
+      "compositeRiskScore": 27
+    },
+    {
+      "vendorId": "vendor-36",
+      "month": "2026-04",
+      "compositeRiskScore": 24
+    },
+    {
+      "vendorId": "vendor-36",
+      "month": "2026-05",
+      "compositeRiskScore": 28
+    },
+    {
+      "vendorId": "vendor-36",
+      "month": "2026-06",
+      "compositeRiskScore": 27
+    },
+    {
+      "vendorId": "vendor-36",
+      "month": "2026-07",
+      "compositeRiskScore": 20
+    },
+    {
+      "vendorId": "vendor-36",
+      "month": "2026-08",
+      "compositeRiskScore": 24
+    },
+    {
+      "vendorId": "vendor-36",
+      "month": "2026-09",
+      "compositeRiskScore": 31
+    },
+    {
+      "vendorId": "vendor-37",
+      "month": "2025-10",
+      "compositeRiskScore": 71
+    },
+    {
+      "vendorId": "vendor-37",
+      "month": "2025-11",
+      "compositeRiskScore": 78
+    },
+    {
+      "vendorId": "vendor-37",
+      "month": "2025-12",
+      "compositeRiskScore": 73
+    },
+    {
+      "vendorId": "vendor-37",
+      "month": "2026-01",
+      "compositeRiskScore": 72
+    },
+    {
+      "vendorId": "vendor-37",
+      "month": "2026-02",
+      "compositeRiskScore": 73
+    },
+    {
+      "vendorId": "vendor-37",
+      "month": "2026-03",
+      "compositeRiskScore": 71
+    },
+    {
+      "vendorId": "vendor-37",
+      "month": "2026-04",
+      "compositeRiskScore": 70
+    },
+    {
+      "vendorId": "vendor-37",
+      "month": "2026-05",
+      "compositeRiskScore": 78
+    },
+    {
+      "vendorId": "vendor-37",
+      "month": "2026-06",
+      "compositeRiskScore": 70
+    },
+    {
+      "vendorId": "vendor-37",
+      "month": "2026-07",
+      "compositeRiskScore": 74
+    },
+    {
+      "vendorId": "vendor-37",
+      "month": "2026-08",
+      "compositeRiskScore": 72
+    },
+    {
+      "vendorId": "vendor-37",
+      "month": "2026-09",
+      "compositeRiskScore": 70
+    },
+    {
+      "vendorId": "vendor-38",
+      "month": "2025-10",
+      "compositeRiskScore": 71
+    },
+    {
+      "vendorId": "vendor-38",
+      "month": "2025-11",
+      "compositeRiskScore": 66
+    },
+    {
+      "vendorId": "vendor-38",
+      "month": "2025-12",
+      "compositeRiskScore": 62
+    },
+    {
+      "vendorId": "vendor-38",
+      "month": "2026-01",
+      "compositeRiskScore": 67
+    },
+    {
+      "vendorId": "vendor-38",
+      "month": "2026-02",
+      "compositeRiskScore": 67
+    },
+    {
+      "vendorId": "vendor-38",
+      "month": "2026-03",
+      "compositeRiskScore": 63
+    },
+    {
+      "vendorId": "vendor-38",
+      "month": "2026-04",
+      "compositeRiskScore": 62
+    },
+    {
+      "vendorId": "vendor-38",
+      "month": "2026-05",
+      "compositeRiskScore": 63
+    },
+    {
+      "vendorId": "vendor-38",
+      "month": "2026-06",
+      "compositeRiskScore": 63
+    },
+    {
+      "vendorId": "vendor-38",
+      "month": "2026-07",
+      "compositeRiskScore": 66
+    },
+    {
+      "vendorId": "vendor-38",
+      "month": "2026-08",
+      "compositeRiskScore": 63
+    },
+    {
+      "vendorId": "vendor-38",
+      "month": "2026-09",
+      "compositeRiskScore": 79
+    },
+    {
+      "vendorId": "vendor-39",
+      "month": "2025-10",
+      "compositeRiskScore": 25
+    },
+    {
+      "vendorId": "vendor-39",
+      "month": "2025-11",
+      "compositeRiskScore": 32
+    },
+    {
+      "vendorId": "vendor-39",
+      "month": "2025-12",
+      "compositeRiskScore": 25
+    },
+    {
+      "vendorId": "vendor-39",
+      "month": "2026-01",
+      "compositeRiskScore": 24
+    },
+    {
+      "vendorId": "vendor-39",
+      "month": "2026-02",
+      "compositeRiskScore": 27
+    },
+    {
+      "vendorId": "vendor-39",
+      "month": "2026-03",
+      "compositeRiskScore": 31
+    },
+    {
+      "vendorId": "vendor-39",
+      "month": "2026-04",
+      "compositeRiskScore": 28
+    },
+    {
+      "vendorId": "vendor-39",
+      "month": "2026-05",
+      "compositeRiskScore": 25
+    },
+    {
+      "vendorId": "vendor-39",
+      "month": "2026-06",
+      "compositeRiskScore": 27
+    },
+    {
+      "vendorId": "vendor-39",
+      "month": "2026-07",
+      "compositeRiskScore": 28
+    },
+    {
+      "vendorId": "vendor-39",
+      "month": "2026-08",
+      "compositeRiskScore": 27
+    },
+    {
+      "vendorId": "vendor-39",
+      "month": "2026-09",
+      "compositeRiskScore": 33
+    },
+    {
+      "vendorId": "vendor-40",
+      "month": "2025-10",
+      "compositeRiskScore": 35
+    },
+    {
+      "vendorId": "vendor-40",
+      "month": "2025-11",
+      "compositeRiskScore": 29
+    },
+    {
+      "vendorId": "vendor-40",
+      "month": "2025-12",
+      "compositeRiskScore": 38
+    },
+    {
+      "vendorId": "vendor-40",
+      "month": "2026-01",
+      "compositeRiskScore": 33
+    },
+    {
+      "vendorId": "vendor-40",
+      "month": "2026-02",
+      "compositeRiskScore": 36
+    },
+    {
+      "vendorId": "vendor-40",
+      "month": "2026-03",
+      "compositeRiskScore": 36
+    },
+    {
+      "vendorId": "vendor-40",
+      "month": "2026-04",
+      "compositeRiskScore": 36
+    },
+    {
+      "vendorId": "vendor-40",
+      "month": "2026-05",
+      "compositeRiskScore": 31
+    },
+    {
+      "vendorId": "vendor-40",
+      "month": "2026-06",
+      "compositeRiskScore": 35
+    },
+    {
+      "vendorId": "vendor-40",
+      "month": "2026-07",
+      "compositeRiskScore": 35
+    },
+    {
+      "vendorId": "vendor-40",
+      "month": "2026-08",
+      "compositeRiskScore": 30
+    },
+    {
+      "vendorId": "vendor-40",
+      "month": "2026-09",
+      "compositeRiskScore": 45
+    },
+    {
+      "vendorId": "vendor-41",
+      "month": "2025-10",
+      "compositeRiskScore": 69
+    },
+    {
+      "vendorId": "vendor-41",
+      "month": "2025-11",
+      "compositeRiskScore": 66
+    },
+    {
+      "vendorId": "vendor-41",
+      "month": "2025-12",
+      "compositeRiskScore": 74
+    },
+    {
+      "vendorId": "vendor-41",
+      "month": "2026-01",
+      "compositeRiskScore": 69
+    },
+    {
+      "vendorId": "vendor-41",
+      "month": "2026-02",
+      "compositeRiskScore": 70
+    },
+    {
+      "vendorId": "vendor-41",
+      "month": "2026-03",
+      "compositeRiskScore": 71
+    },
+    {
+      "vendorId": "vendor-41",
+      "month": "2026-04",
+      "compositeRiskScore": 74
+    },
+    {
+      "vendorId": "vendor-41",
+      "month": "2026-05",
+      "compositeRiskScore": 67
+    },
+    {
+      "vendorId": "vendor-41",
+      "month": "2026-06",
+      "compositeRiskScore": 67
+    },
+    {
+      "vendorId": "vendor-41",
+      "month": "2026-07",
+      "compositeRiskScore": 71
+    },
+    {
+      "vendorId": "vendor-41",
+      "month": "2026-08",
+      "compositeRiskScore": 70
+    },
+    {
+      "vendorId": "vendor-41",
+      "month": "2026-09",
+      "compositeRiskScore": 77
+    },
+    {
+      "vendorId": "vendor-42",
+      "month": "2025-10",
+      "compositeRiskScore": 45
+    },
+    {
+      "vendorId": "vendor-42",
+      "month": "2025-11",
+      "compositeRiskScore": 37
+    },
+    {
+      "vendorId": "vendor-42",
+      "month": "2025-12",
+      "compositeRiskScore": 44
+    },
+    {
+      "vendorId": "vendor-42",
+      "month": "2026-01",
+      "compositeRiskScore": 42
+    },
+    {
+      "vendorId": "vendor-42",
+      "month": "2026-02",
+      "compositeRiskScore": 45
+    },
+    {
+      "vendorId": "vendor-42",
+      "month": "2026-03",
+      "compositeRiskScore": 42
+    },
+    {
+      "vendorId": "vendor-42",
+      "month": "2026-04",
+      "compositeRiskScore": 38
+    },
+    {
+      "vendorId": "vendor-42",
+      "month": "2026-05",
+      "compositeRiskScore": 45
+    },
+    {
+      "vendorId": "vendor-42",
+      "month": "2026-06",
+      "compositeRiskScore": 44
+    },
+    {
+      "vendorId": "vendor-42",
+      "month": "2026-07",
+      "compositeRiskScore": 40
+    },
+    {
+      "vendorId": "vendor-42",
+      "month": "2026-08",
+      "compositeRiskScore": 44
+    },
+    {
+      "vendorId": "vendor-42",
+      "month": "2026-09",
+      "compositeRiskScore": 42
+    },
+    {
+      "vendorId": "vendor-43",
+      "month": "2025-10",
+      "compositeRiskScore": 82
+    },
+    {
+      "vendorId": "vendor-43",
+      "month": "2025-11",
+      "compositeRiskScore": 76
+    },
+    {
+      "vendorId": "vendor-43",
+      "month": "2025-12",
+      "compositeRiskScore": 82
+    },
+    {
+      "vendorId": "vendor-43",
+      "month": "2026-01",
+      "compositeRiskScore": 81
+    },
+    {
+      "vendorId": "vendor-43",
+      "month": "2026-02",
+      "compositeRiskScore": 80
+    },
+    {
+      "vendorId": "vendor-43",
+      "month": "2026-03",
+      "compositeRiskScore": 83
+    },
+    {
+      "vendorId": "vendor-43",
+      "month": "2026-04",
+      "compositeRiskScore": 82
+    },
+    {
+      "vendorId": "vendor-43",
+      "month": "2026-05",
+      "compositeRiskScore": 79
+    },
+    {
+      "vendorId": "vendor-43",
+      "month": "2026-06",
+      "compositeRiskScore": 85
+    },
+    {
+      "vendorId": "vendor-43",
+      "month": "2026-07",
+      "compositeRiskScore": 82
+    },
+    {
+      "vendorId": "vendor-43",
+      "month": "2026-08",
+      "compositeRiskScore": 85
+    },
+    {
+      "vendorId": "vendor-43",
+      "month": "2026-09",
+      "compositeRiskScore": 91
+    },
+    {
+      "vendorId": "vendor-44",
+      "month": "2025-10",
+      "compositeRiskScore": 25
+    },
+    {
+      "vendorId": "vendor-44",
+      "month": "2025-11",
+      "compositeRiskScore": 20
+    },
+    {
+      "vendorId": "vendor-44",
+      "month": "2025-12",
+      "compositeRiskScore": 20
+    },
+    {
+      "vendorId": "vendor-44",
+      "month": "2026-01",
+      "compositeRiskScore": 20
+    },
+    {
+      "vendorId": "vendor-44",
+      "month": "2026-02",
+      "compositeRiskScore": 20
+    },
+    {
+      "vendorId": "vendor-44",
+      "month": "2026-03",
+      "compositeRiskScore": 20
+    },
+    {
+      "vendorId": "vendor-44",
+      "month": "2026-04",
+      "compositeRiskScore": 22
+    },
+    {
+      "vendorId": "vendor-44",
+      "month": "2026-05",
+      "compositeRiskScore": 20
+    },
+    {
+      "vendorId": "vendor-44",
+      "month": "2026-06",
+      "compositeRiskScore": 24
+    },
+    {
+      "vendorId": "vendor-44",
+      "month": "2026-07",
+      "compositeRiskScore": 24
+    },
+    {
+      "vendorId": "vendor-44",
+      "month": "2026-08",
+      "compositeRiskScore": 25
+    },
+    {
+      "vendorId": "vendor-44",
+      "month": "2026-09",
+      "compositeRiskScore": 31
+    },
+    {
+      "vendorId": "vendor-45",
+      "month": "2025-10",
+      "compositeRiskScore": 81
+    },
+    {
+      "vendorId": "vendor-45",
+      "month": "2025-11",
+      "compositeRiskScore": 75
+    },
+    {
+      "vendorId": "vendor-45",
+      "month": "2025-12",
+      "compositeRiskScore": 81
+    },
+    {
+      "vendorId": "vendor-45",
+      "month": "2026-01",
+      "compositeRiskScore": 78
+    },
+    {
+      "vendorId": "vendor-45",
+      "month": "2026-02",
+      "compositeRiskScore": 81
+    },
+    {
+      "vendorId": "vendor-45",
+      "month": "2026-03",
+      "compositeRiskScore": 78
+    },
+    {
+      "vendorId": "vendor-45",
+      "month": "2026-04",
+      "compositeRiskScore": 83
+    },
+    {
+      "vendorId": "vendor-45",
+      "month": "2026-05",
+      "compositeRiskScore": 81
+    },
+    {
+      "vendorId": "vendor-45",
+      "month": "2026-06",
+      "compositeRiskScore": 76
+    },
+    {
+      "vendorId": "vendor-45",
+      "month": "2026-07",
+      "compositeRiskScore": 75
+    },
+    {
+      "vendorId": "vendor-45",
+      "month": "2026-08",
+      "compositeRiskScore": 79
+    },
+    {
+      "vendorId": "vendor-45",
+      "month": "2026-09",
+      "compositeRiskScore": 80
+    },
+    {
+      "vendorId": "vendor-46",
+      "month": "2025-10",
+      "compositeRiskScore": 66
+    },
+    {
+      "vendorId": "vendor-46",
+      "month": "2025-11",
+      "compositeRiskScore": 67
+    },
+    {
+      "vendorId": "vendor-46",
+      "month": "2025-12",
+      "compositeRiskScore": 62
+    },
+    {
+      "vendorId": "vendor-46",
+      "month": "2026-01",
+      "compositeRiskScore": 64
+    },
+    {
+      "vendorId": "vendor-46",
+      "month": "2026-02",
+      "compositeRiskScore": 70
+    },
+    {
+      "vendorId": "vendor-46",
+      "month": "2026-03",
+      "compositeRiskScore": 67
+    },
+    {
+      "vendorId": "vendor-46",
+      "month": "2026-04",
+      "compositeRiskScore": 69
+    },
+    {
+      "vendorId": "vendor-46",
+      "month": "2026-05",
+      "compositeRiskScore": 68
+    },
+    {
+      "vendorId": "vendor-46",
+      "month": "2026-06",
+      "compositeRiskScore": 68
+    },
+    {
+      "vendorId": "vendor-46",
+      "month": "2026-07",
+      "compositeRiskScore": 62
+    },
+    {
+      "vendorId": "vendor-46",
+      "month": "2026-08",
+      "compositeRiskScore": 64
+    },
+    {
+      "vendorId": "vendor-46",
+      "month": "2026-09",
+      "compositeRiskScore": 78
+    }
+  ],
+  "certificates": [
+    {
+      "id": "cert-001",
+      "vendorId": "vendor-01",
+      "type": "ISO 9001",
+      "issuedOn": "2024-07-04",
+      "expiresOn": "2026-11-13"
+    },
+    {
+      "id": "cert-002",
+      "vendorId": "vendor-02",
+      "type": "ISO 27001",
+      "issuedOn": "2024-02-18",
+      "expiresOn": "2028-12-16"
+    },
+    {
+      "id": "cert-003",
+      "vendorId": "vendor-02",
+      "type": "Cyber",
+      "issuedOn": "2025-09-05",
+      "expiresOn": "2027-01-05"
+    },
+    {
+      "id": "cert-004",
+      "vendorId": "vendor-02",
+      "type": "Insurance",
+      "issuedOn": "2025-12-10",
+      "expiresOn": "2028-06-11"
+    },
+    {
+      "id": "cert-005",
+      "vendorId": "vendor-03",
+      "type": "Cyber",
+      "issuedOn": "2023-05-09",
+      "expiresOn": "2026-05-25"
+    },
+    {
+      "id": "cert-006",
+      "vendorId": "vendor-03",
+      "type": "Insurance",
+      "issuedOn": "2023-07-26",
+      "expiresOn": "2026-11-11"
+    },
+    {
+      "id": "cert-007",
+      "vendorId": "vendor-03",
+      "type": "Diversity",
+      "issuedOn": "2023-01-06",
+      "expiresOn": "2027-01-22"
+    },
+    {
+      "id": "cert-008",
+      "vendorId": "vendor-04",
+      "type": "Insurance",
+      "issuedOn": "2023-03-05",
+      "expiresOn": "2028-02-16"
+    },
+    {
+      "id": "cert-009",
+      "vendorId": "vendor-04",
+      "type": "Diversity",
+      "issuedOn": "2024-12-11",
+      "expiresOn": "2027-04-14"
+    },
+    {
+      "id": "cert-010",
+      "vendorId": "vendor-04",
+      "type": "Financial Audit",
+      "issuedOn": "2024-03-05",
+      "expiresOn": "2026-05-15"
+    },
+    {
+      "id": "cert-011",
+      "vendorId": "vendor-05",
+      "type": "Diversity",
+      "issuedOn": "2024-06-01",
+      "expiresOn": "2026-12-22"
+    },
+    {
+      "id": "cert-012",
+      "vendorId": "vendor-05",
+      "type": "Financial Audit",
+      "issuedOn": "2024-09-17",
+      "expiresOn": "2028-10-26"
+    },
+    {
+      "id": "cert-013",
+      "vendorId": "vendor-05",
+      "type": "ISO 9001",
+      "issuedOn": "2025-04-23",
+      "expiresOn": "2028-07-03"
+    },
+    {
+      "id": "cert-014",
+      "vendorId": "vendor-06",
+      "type": "Financial Audit",
+      "issuedOn": "2023-02-20",
+      "expiresOn": "2027-04-25"
+    },
+    {
+      "id": "cert-015",
+      "vendorId": "vendor-06",
+      "type": "ISO 9001",
+      "issuedOn": "2025-07-12",
+      "expiresOn": "2026-04-10"
+    },
+    {
+      "id": "cert-016",
+      "vendorId": "vendor-07",
+      "type": "ISO 9001",
+      "issuedOn": "2025-02-15",
+      "expiresOn": "2026-11-19"
+    },
+    {
+      "id": "cert-017",
+      "vendorId": "vendor-07",
+      "type": "ISO 27001",
+      "issuedOn": "2024-07-26",
+      "expiresOn": "2027-12-03"
+    },
+    {
+      "id": "cert-018",
+      "vendorId": "vendor-07",
+      "type": "Cyber",
+      "issuedOn": "2024-12-02",
+      "expiresOn": "2028-08-27"
+    },
+    {
+      "id": "cert-019",
+      "vendorId": "vendor-08",
+      "type": "ISO 27001",
+      "issuedOn": "2025-12-09",
+      "expiresOn": "2028-03-14"
+    },
+    {
+      "id": "cert-020",
+      "vendorId": "vendor-08",
+      "type": "Cyber",
+      "issuedOn": "2025-02-13",
+      "expiresOn": "2026-02-04"
+    },
+    {
+      "id": "cert-021",
+      "vendorId": "vendor-09",
+      "type": "Cyber",
+      "issuedOn": "2023-09-19",
+      "expiresOn": "2026-12-27"
+    },
+    {
+      "id": "cert-022",
+      "vendorId": "vendor-09",
+      "type": "Insurance",
+      "issuedOn": "2025-09-24",
+      "expiresOn": "2027-12-19"
+    },
+    {
+      "id": "cert-023",
+      "vendorId": "vendor-09",
+      "type": "Diversity",
+      "issuedOn": "2024-09-01",
+      "expiresOn": "2028-07-15"
+    },
+    {
+      "id": "cert-024",
+      "vendorId": "vendor-10",
+      "type": "Insurance",
+      "issuedOn": "2023-10-25",
+      "expiresOn": "2027-03-28"
+    },
+    {
+      "id": "cert-025",
+      "vendorId": "vendor-11",
+      "type": "Diversity",
+      "issuedOn": "2025-04-10",
+      "expiresOn": "2026-07-03"
+    },
+    {
+      "id": "cert-026",
+      "vendorId": "vendor-12",
+      "type": "Financial Audit",
+      "issuedOn": "2023-03-04",
+      "expiresOn": "2026-12-13"
+    },
+    {
+      "id": "cert-027",
+      "vendorId": "vendor-13",
+      "type": "ISO 9001",
+      "issuedOn": "2023-02-11",
+      "expiresOn": "2027-07-06"
+    },
+    {
+      "id": "cert-028",
+      "vendorId": "vendor-14",
+      "type": "ISO 27001",
+      "issuedOn": "2023-11-04",
+      "expiresOn": "2028-03-09"
+    },
+    {
+      "id": "cert-029",
+      "vendorId": "vendor-14",
+      "type": "Cyber",
+      "issuedOn": "2025-12-18",
+      "expiresOn": "2027-08-11"
+    },
+    {
+      "id": "cert-030",
+      "vendorId": "vendor-15",
+      "type": "Cyber",
+      "issuedOn": "2024-02-07",
+      "expiresOn": "2026-09-13"
+    },
+    {
+      "id": "cert-031",
+      "vendorId": "vendor-15",
+      "type": "Insurance",
+      "issuedOn": "2025-09-02",
+      "expiresOn": "2026-11-23"
+    },
+    {
+      "id": "cert-032",
+      "vendorId": "vendor-16",
+      "type": "Insurance",
+      "issuedOn": "2024-12-26",
+      "expiresOn": "2027-07-24"
+    },
+    {
+      "id": "cert-033",
+      "vendorId": "vendor-16",
+      "type": "Diversity",
+      "issuedOn": "2025-06-07",
+      "expiresOn": "2028-12-08"
+    },
+    {
+      "id": "cert-034",
+      "vendorId": "vendor-16",
+      "type": "Financial Audit",
+      "issuedOn": "2024-05-01",
+      "expiresOn": "2027-05-13"
+    },
+    {
+      "id": "cert-035",
+      "vendorId": "vendor-17",
+      "type": "Diversity",
+      "issuedOn": "2023-02-09",
+      "expiresOn": "2026-03-10"
+    },
+    {
+      "id": "cert-036",
+      "vendorId": "vendor-17",
+      "type": "Financial Audit",
+      "issuedOn": "2025-01-25",
+      "expiresOn": "2026-12-20"
+    },
+    {
+      "id": "cert-037",
+      "vendorId": "vendor-18",
+      "type": "Financial Audit",
+      "issuedOn": "2023-09-17",
+      "expiresOn": "2027-09-23"
+    },
+    {
+      "id": "cert-038",
+      "vendorId": "vendor-18",
+      "type": "ISO 9001",
+      "issuedOn": "2023-09-21",
+      "expiresOn": "2027-11-01"
+    },
+    {
+      "id": "cert-039",
+      "vendorId": "vendor-19",
+      "type": "ISO 9001",
+      "issuedOn": "2023-02-11",
+      "expiresOn": "2028-07-07"
+    },
+    {
+      "id": "cert-040",
+      "vendorId": "vendor-19",
+      "type": "ISO 27001",
+      "issuedOn": "2025-09-13",
+      "expiresOn": "2026-02-01"
+    },
+    {
+      "id": "cert-041",
+      "vendorId": "vendor-20",
+      "type": "ISO 27001",
+      "issuedOn": "2024-04-18",
+      "expiresOn": "2026-12-29"
+    },
+    {
+      "id": "cert-042",
+      "vendorId": "vendor-21",
+      "type": "Cyber",
+      "issuedOn": "2023-12-24",
+      "expiresOn": "2028-10-19"
+    },
+    {
+      "id": "cert-043",
+      "vendorId": "vendor-22",
+      "type": "Insurance",
+      "issuedOn": "2025-12-20",
+      "expiresOn": "2028-11-22"
+    },
+    {
+      "id": "cert-044",
+      "vendorId": "vendor-23",
+      "type": "Diversity",
+      "issuedOn": "2024-09-26",
+      "expiresOn": "2027-10-15"
+    },
+    {
+      "id": "cert-045",
+      "vendorId": "vendor-23",
+      "type": "Financial Audit",
+      "issuedOn": "2025-07-19",
+      "expiresOn": "2026-04-09"
+    },
+    {
+      "id": "cert-046",
+      "vendorId": "vendor-24",
+      "type": "Financial Audit",
+      "issuedOn": "2023-10-19",
+      "expiresOn": "2026-12-24"
+    },
+    {
+      "id": "cert-047",
+      "vendorId": "vendor-24",
+      "type": "ISO 9001",
+      "issuedOn": "2025-01-06",
+      "expiresOn": "2028-07-13"
+    },
+    {
+      "id": "cert-048",
+      "vendorId": "vendor-24",
+      "type": "ISO 27001",
+      "issuedOn": "2023-02-18",
+      "expiresOn": "2027-05-23"
+    },
+    {
+      "id": "cert-049",
+      "vendorId": "vendor-25",
+      "type": "ISO 9001",
+      "issuedOn": "2024-09-06",
+      "expiresOn": "2028-08-16"
+    },
+    {
+      "id": "cert-050",
+      "vendorId": "vendor-25",
+      "type": "ISO 27001",
+      "issuedOn": "2023-12-10",
+      "expiresOn": "2026-08-16"
+    },
+    {
+      "id": "cert-051",
+      "vendorId": "vendor-25",
+      "type": "Cyber",
+      "issuedOn": "2025-09-13",
+      "expiresOn": "2026-12-25"
+    },
+    {
+      "id": "cert-052",
+      "vendorId": "vendor-26",
+      "type": "ISO 27001",
+      "issuedOn": "2023-04-04",
+      "expiresOn": "2027-02-05"
+    },
+    {
+      "id": "cert-053",
+      "vendorId": "vendor-26",
+      "type": "Cyber",
+      "issuedOn": "2023-03-20",
+      "expiresOn": "2027-11-24"
+    },
+    {
+      "id": "cert-054",
+      "vendorId": "vendor-26",
+      "type": "Insurance",
+      "issuedOn": "2024-04-25",
+      "expiresOn": "2028-05-22"
+    },
+    {
+      "id": "cert-055",
+      "vendorId": "vendor-27",
+      "type": "Cyber",
+      "issuedOn": "2024-08-27",
+      "expiresOn": "2026-07-21"
+    },
+    {
+      "id": "cert-056",
+      "vendorId": "vendor-27",
+      "type": "Insurance",
+      "issuedOn": "2024-09-27",
+      "expiresOn": "2026-11-18"
+    },
+    {
+      "id": "cert-057",
+      "vendorId": "vendor-27",
+      "type": "Diversity",
+      "issuedOn": "2024-12-26",
+      "expiresOn": "2027-11-22"
+    },
+    {
+      "id": "cert-058",
+      "vendorId": "vendor-28",
+      "type": "Insurance",
+      "issuedOn": "2023-10-14",
+      "expiresOn": "2027-03-15"
+    },
+    {
+      "id": "cert-059",
+      "vendorId": "vendor-29",
+      "type": "Diversity",
+      "issuedOn": "2024-12-23",
+      "expiresOn": "2027-09-08"
+    },
+    {
+      "id": "cert-060",
+      "vendorId": "vendor-29",
+      "type": "Financial Audit",
+      "issuedOn": "2024-02-18",
+      "expiresOn": "2026-07-14"
+    },
+    {
+      "id": "cert-061",
+      "vendorId": "vendor-30",
+      "type": "Financial Audit",
+      "issuedOn": "2023-08-03",
+      "expiresOn": "2026-12-06"
+    },
+    {
+      "id": "cert-062",
+      "vendorId": "vendor-30",
+      "type": "ISO 9001",
+      "issuedOn": "2025-01-21",
+      "expiresOn": "2027-02-26"
+    },
+    {
+      "id": "cert-063",
+      "vendorId": "vendor-30",
+      "type": "ISO 27001",
+      "issuedOn": "2025-12-24",
+      "expiresOn": "2027-03-02"
+    },
+    {
+      "id": "cert-064",
+      "vendorId": "vendor-31",
+      "type": "ISO 9001",
+      "issuedOn": "2023-04-20",
+      "expiresOn": "2028-08-10"
+    },
+    {
+      "id": "cert-065",
+      "vendorId": "vendor-31",
+      "type": "ISO 27001",
+      "issuedOn": "2024-01-05",
+      "expiresOn": "2026-07-03"
+    },
+    {
+      "id": "cert-066",
+      "vendorId": "vendor-32",
+      "type": "ISO 27001",
+      "issuedOn": "2024-03-23",
+      "expiresOn": "2026-11-17"
+    },
+    {
+      "id": "cert-067",
+      "vendorId": "vendor-32",
+      "type": "Cyber",
+      "issuedOn": "2023-03-01",
+      "expiresOn": "2027-04-08"
+    },
+    {
+      "id": "cert-068",
+      "vendorId": "vendor-32",
+      "type": "Insurance",
+      "issuedOn": "2023-10-01",
+      "expiresOn": "2028-05-23"
+    },
+    {
+      "id": "cert-069",
+      "vendorId": "vendor-33",
+      "type": "Cyber",
+      "issuedOn": "2023-12-04",
+      "expiresOn": "2028-11-04"
+    },
+    {
+      "id": "cert-070",
+      "vendorId": "vendor-33",
+      "type": "Insurance",
+      "issuedOn": "2025-01-18",
+      "expiresOn": "2026-01-16"
+    },
+    {
+      "id": "cert-071",
+      "vendorId": "vendor-33",
+      "type": "Diversity",
+      "issuedOn": "2023-11-22",
+      "expiresOn": "2026-11-06"
+    },
+    {
+      "id": "cert-072",
+      "vendorId": "vendor-34",
+      "type": "Insurance",
+      "issuedOn": "2023-01-10",
+      "expiresOn": "2027-02-02"
+    },
+    {
+      "id": "cert-073",
+      "vendorId": "vendor-35",
+      "type": "Diversity",
+      "issuedOn": "2023-10-18",
+      "expiresOn": "2028-08-11"
+    },
+    {
+      "id": "cert-074",
+      "vendorId": "vendor-36",
+      "type": "Financial Audit",
+      "issuedOn": "2024-12-26",
+      "expiresOn": "2028-11-21"
+    },
+    {
+      "id": "cert-075",
+      "vendorId": "vendor-37",
+      "type": "ISO 9001",
+      "issuedOn": "2025-10-17",
+      "expiresOn": "2026-05-03"
+    },
+    {
+      "id": "cert-076",
+      "vendorId": "vendor-37",
+      "type": "ISO 27001",
+      "issuedOn": "2023-05-15",
+      "expiresOn": "2026-12-10"
+    },
+    {
+      "id": "cert-077",
+      "vendorId": "vendor-37",
+      "type": "Cyber",
+      "issuedOn": "2023-05-27",
+      "expiresOn": "2027-08-21"
+    },
+    {
+      "id": "cert-078",
+      "vendorId": "vendor-38",
+      "type": "ISO 27001",
+      "issuedOn": "2023-02-19",
+      "expiresOn": "2027-12-05"
+    },
+    {
+      "id": "cert-079",
+      "vendorId": "vendor-38",
+      "type": "Cyber",
+      "issuedOn": "2025-09-21",
+      "expiresOn": "2027-11-23"
+    },
+    {
+      "id": "cert-080",
+      "vendorId": "vendor-38",
+      "type": "Insurance",
+      "issuedOn": "2023-05-07",
+      "expiresOn": "2026-08-11"
+    },
+    {
+      "id": "cert-081",
+      "vendorId": "vendor-39",
+      "type": "Cyber",
+      "issuedOn": "2024-12-24",
+      "expiresOn": "2026-12-06"
+    },
+    {
+      "id": "cert-082",
+      "vendorId": "vendor-39",
+      "type": "Insurance",
+      "issuedOn": "2024-09-21",
+      "expiresOn": "2028-03-20"
+    },
+    {
+      "id": "cert-083",
+      "vendorId": "vendor-40",
+      "type": "Insurance",
+      "issuedOn": "2023-06-21",
+      "expiresOn": "2027-10-16"
+    },
+    {
+      "id": "cert-084",
+      "vendorId": "vendor-40",
+      "type": "Diversity",
+      "issuedOn": "2024-04-05",
+      "expiresOn": "2027-10-14"
+    },
+    {
+      "id": "cert-085",
+      "vendorId": "vendor-41",
+      "type": "Diversity",
+      "issuedOn": "2023-09-17",
+      "expiresOn": "2026-06-08"
+    },
+    {
+      "id": "cert-086",
+      "vendorId": "vendor-41",
+      "type": "Financial Audit",
+      "issuedOn": "2023-11-21",
+      "expiresOn": "2026-11-14"
+    },
+    {
+      "id": "cert-087",
+      "vendorId": "vendor-42",
+      "type": "Financial Audit",
+      "issuedOn": "2023-07-22",
+      "expiresOn": "2028-06-25"
+    },
+    {
+      "id": "cert-088",
+      "vendorId": "vendor-42",
+      "type": "ISO 9001",
+      "issuedOn": "2023-01-02",
+      "expiresOn": "2028-07-02"
+    },
+    {
+      "id": "cert-089",
+      "vendorId": "vendor-42",
+      "type": "ISO 27001",
+      "issuedOn": "2025-07-06",
+      "expiresOn": "2027-03-26"
+    },
+    {
+      "id": "cert-090",
+      "vendorId": "vendor-43",
+      "type": "ISO 9001",
+      "issuedOn": "2025-03-11",
+      "expiresOn": "2026-09-13"
+    },
+    {
+      "id": "cert-091",
+      "vendorId": "vendor-44",
+      "type": "ISO 27001",
+      "issuedOn": "2024-03-11",
+      "expiresOn": "2026-12-06"
+    },
+    {
+      "id": "cert-092",
+      "vendorId": "vendor-45",
+      "type": "Cyber",
+      "issuedOn": "2024-09-20",
+      "expiresOn": "2028-10-07"
+    },
+    {
+      "id": "cert-093",
+      "vendorId": "vendor-45",
+      "type": "Insurance",
+      "issuedOn": "2023-12-11",
+      "expiresOn": "2027-03-16"
+    },
+    {
+      "id": "cert-094",
+      "vendorId": "vendor-46",
+      "type": "Insurance",
+      "issuedOn": "2023-04-22",
+      "expiresOn": "2028-12-07"
+    },
+    {
+      "id": "cert-095",
+      "vendorId": "vendor-46",
+      "type": "Diversity",
+      "issuedOn": "2024-04-11",
+      "expiresOn": "2026-06-05"
+    }
+  ],
+  "approvals": [
+    {
+      "id": "apr-001",
+      "vendorId": "vendor-01",
+      "vendorName": "Northwind Industrial Supplies",
+      "region": "EMEA",
+      "stage": "Submitted",
+      "owner": "R. Mora",
+      "submittedOn": "2026-09-06",
+      "dueOn": "2026-12-16",
+      "checklist": [
+        {
+          "item": "W-9 / tax forms on file",
+          "done": true
+        },
+        {
+          "item": "Insurance certificate",
+          "done": false
+        },
+        {
+          "item": "Cyber questionnaire",
+          "done": true
+        },
+        {
+          "item": "Financial health review",
+          "done": false
+        },
+        {
+          "item": "Supplier code of conduct",
+          "done": true
+        }
+      ],
+      "checklistDone": 3,
+      "checklistTotal": 5,
+      "auditTrail": [
+        {
+          "ts": "2026-09-06 09:14",
+          "actor": "K. Tan",
+          "action": "Submitted for onboarding"
+        }
+      ]
+    },
+    {
+      "id": "apr-002",
+      "vendorId": "vendor-02",
+      "vendorName": "Acme Logistics",
+      "region": "AMER",
+      "stage": "Risk Review",
+      "owner": "P. Iyer",
+      "submittedOn": "2026-09-19",
+      "dueOn": "2026-11-21",
+      "checklist": [
+        {
+          "item": "W-9 / tax forms on file",
+          "done": true
+        },
+        {
+          "item": "Insurance certificate",
+          "done": true
+        },
+        {
+          "item": "Cyber questionnaire",
+          "done": true
+        },
+        {
+          "item": "Financial health review",
+          "done": true
+        },
+        {
+          "item": "Supplier code of conduct",
+          "done": true
+        }
+      ],
+      "checklistDone": 5,
+      "checklistTotal": 5,
+      "auditTrail": [
+        {
+          "ts": "2026-09-19 09:14",
+          "actor": "R. Mora",
+          "action": "Submitted for onboarding"
+        }
+      ]
+    },
+    {
+      "id": "apr-003",
+      "vendorId": "vendor-03",
+      "vendorName": "Vertex Components",
+      "region": "AMER",
+      "stage": "Compliance Review",
+      "owner": "J. Lau",
+      "submittedOn": "2026-07-24",
+      "dueOn": "2026-10-28",
+      "checklist": [
+        {
+          "item": "W-9 / tax forms on file",
+          "done": true
+        },
+        {
+          "item": "Insurance certificate",
+          "done": true
+        },
+        {
+          "item": "Cyber questionnaire",
+          "done": true
+        },
+        {
+          "item": "Financial health review",
+          "done": true
+        },
+        {
+          "item": "Supplier code of conduct",
+          "done": true
+        }
+      ],
+      "checklistDone": 5,
+      "checklistTotal": 5,
+      "auditTrail": [
+        {
+          "ts": "2026-07-24 09:14",
+          "actor": "D. Silva",
+          "action": "Submitted for onboarding"
+        }
+      ]
+    },
+    {
+      "id": "apr-004",
+      "vendorId": "vendor-04",
+      "vendorName": "Global Packaging",
+      "region": "APAC",
+      "stage": "Category Approval",
+      "owner": "A. Novak",
+      "submittedOn": "2026-07-10",
+      "dueOn": "2026-10-08",
+      "checklist": [
+        {
+          "item": "W-9 / tax forms on file",
+          "done": true
+        },
+        {
+          "item": "Insurance certificate",
+          "done": true
+        },
+        {
+          "item": "Cyber questionnaire",
+          "done": false
+        },
+        {
+          "item": "Financial health review",
+          "done": false
+        },
+        {
+          "item": "Supplier code of conduct",
+          "done": true
+        }
+      ],
+      "checklistDone": 3,
+      "checklistTotal": 5,
+      "auditTrail": [
+        {
+          "ts": "2026-07-10 09:14",
+          "actor": "A. Novak",
+          "action": "Submitted for onboarding"
+        }
+      ]
+    },
+    {
+      "id": "apr-005",
+      "vendorId": "vendor-05",
+      "vendorName": "Apex Systems",
+      "region": "APAC",
+      "stage": "Approved",
+      "owner": "K. Tan",
+      "submittedOn": "2026-07-12",
+      "dueOn": "2026-12-27",
+      "checklist": [
+        {
+          "item": "W-9 / tax forms on file",
+          "done": true
+        },
+        {
+          "item": "Insurance certificate",
+          "done": false
+        },
+        {
+          "item": "Cyber questionnaire",
+          "done": false
+        },
+        {
+          "item": "Financial health review",
+          "done": true
+        },
+        {
+          "item": "Supplier code of conduct",
+          "done": true
+        }
+      ],
+      "checklistDone": 3,
+      "checklistTotal": 5,
+      "auditTrail": [
+        {
+          "ts": "2026-07-12 09:14",
+          "actor": "J. Lau",
+          "action": "Submitted for onboarding"
+        }
+      ]
+    },
+    {
+      "id": "apr-006",
+      "vendorId": "vendor-06",
+      "vendorName": "Summit Consulting",
+      "region": "AMER",
+      "stage": "Submitted",
+      "owner": "R. Mora",
+      "submittedOn": "2026-07-13",
+      "dueOn": "2026-11-22",
+      "checklist": [
+        {
+          "item": "W-9 / tax forms on file",
+          "done": true
+        },
+        {
+          "item": "Insurance certificate",
+          "done": false
+        },
+        {
+          "item": "Cyber questionnaire",
+          "done": true
+        },
+        {
+          "item": "Financial health review",
+          "done": true
+        },
+        {
+          "item": "Supplier code of conduct",
+          "done": true
+        }
+      ],
+      "checklistDone": 4,
+      "checklistTotal": 5,
+      "auditTrail": [
+        {
+          "ts": "2026-07-13 09:14",
+          "actor": "K. Tan",
+          "action": "Submitted for onboarding"
+        }
+      ]
+    },
+    {
+      "id": "apr-007",
+      "vendorId": "vendor-12",
+      "vendorName": "Ironbridge Logistics",
+      "region": "AMER",
+      "stage": "Risk Review",
+      "owner": "P. Iyer",
+      "submittedOn": "2026-09-04",
+      "dueOn": "2026-11-22",
+      "checklist": [
+        {
+          "item": "W-9 / tax forms on file",
+          "done": true
+        },
+        {
+          "item": "Insurance certificate",
+          "done": false
+        },
+        {
+          "item": "Cyber questionnaire",
+          "done": false
+        },
+        {
+          "item": "Financial health review",
+          "done": false
+        },
+        {
+          "item": "Supplier code of conduct",
+          "done": false
+        }
+      ],
+      "checklistDone": 1,
+      "checklistTotal": 5,
+      "auditTrail": [
+        {
+          "ts": "2026-09-04 09:14",
+          "actor": "P. Iyer",
+          "action": "Submitted for onboarding"
+        }
+      ]
+    },
+    {
+      "id": "apr-008",
+      "vendorId": "vendor-13",
+      "vendorName": "Meridian Components",
+      "region": "AMER",
+      "stage": "Compliance Review",
+      "owner": "K. Tan",
+      "submittedOn": "2026-09-20",
+      "dueOn": "2026-10-08",
+      "checklist": [
+        {
+          "item": "W-9 / tax forms on file",
+          "done": true
+        },
+        {
+          "item": "Insurance certificate",
+          "done": true
+        },
+        {
+          "item": "Cyber questionnaire",
+          "done": true
+        },
+        {
+          "item": "Financial health review",
+          "done": false
+        },
+        {
+          "item": "Supplier code of conduct",
+          "done": true
+        }
+      ],
+      "checklistDone": 4,
+      "checklistTotal": 5,
+      "auditTrail": [
+        {
+          "ts": "2026-09-20 09:14",
+          "actor": "D. Silva",
+          "action": "Submitted for onboarding"
+        }
+      ]
+    },
+    {
+      "id": "apr-009",
+      "vendorId": "vendor-07",
+      "vendorName": "Cascade Materials",
+      "region": "AMER",
+      "stage": "Category Approval",
+      "owner": "P. Iyer",
+      "submittedOn": "2026-07-18",
+      "dueOn": "2026-10-21",
+      "checklist": [
+        {
+          "item": "W-9 / tax forms on file",
+          "done": true
+        },
+        {
+          "item": "Insurance certificate",
+          "done": true
+        },
+        {
+          "item": "Cyber questionnaire",
+          "done": false
+        },
+        {
+          "item": "Financial health review",
+          "done": false
+        },
+        {
+          "item": "Supplier code of conduct",
+          "done": true
+        }
+      ],
+      "checklistDone": 3,
+      "checklistTotal": 5,
+      "auditTrail": [
+        {
+          "ts": "2026-07-18 09:14",
+          "actor": "K. Tan",
+          "action": "Submitted for onboarding"
+        }
+      ]
+    },
+    {
+      "id": "apr-010",
+      "vendorId": "vendor-08",
+      "vendorName": "Pioneer Distribution",
+      "region": "EMEA",
+      "stage": "Approved",
+      "owner": "P. Iyer",
+      "submittedOn": "2026-08-07",
+      "dueOn": "2026-12-16",
+      "checklist": [
+        {
+          "item": "W-9 / tax forms on file",
+          "done": true
+        },
+        {
+          "item": "Insurance certificate",
+          "done": false
+        },
+        {
+          "item": "Cyber questionnaire",
+          "done": false
+        },
+        {
+          "item": "Financial health review",
+          "done": false
+        },
+        {
+          "item": "Supplier code of conduct",
+          "done": true
+        }
+      ],
+      "checklistDone": 2,
+      "checklistTotal": 5,
+      "auditTrail": [
+        {
+          "ts": "2026-08-07 09:14",
+          "actor": "P. Iyer",
+          "action": "Submitted for onboarding"
+        }
+      ]
+    },
+    {
+      "id": "apr-011",
+      "vendorId": "vendor-09",
+      "vendorName": "Atlas Technologies",
+      "region": "EMEA",
+      "stage": "Submitted",
+      "owner": "K. Tan",
+      "submittedOn": "2026-07-13",
+      "dueOn": "2026-10-20",
+      "checklist": [
+        {
+          "item": "W-9 / tax forms on file",
+          "done": true
+        },
+        {
+          "item": "Insurance certificate",
+          "done": false
+        },
+        {
+          "item": "Cyber questionnaire",
+          "done": false
+        },
+        {
+          "item": "Financial health review",
+          "done": false
+        },
+        {
+          "item": "Supplier code of conduct",
+          "done": true
+        }
+      ],
+      "checklistDone": 2,
+      "checklistTotal": 5,
+      "auditTrail": [
+        {
+          "ts": "2026-07-13 09:14",
+          "actor": "R. Mora",
+          "action": "Submitted for onboarding"
+        }
+      ]
+    },
+    {
+      "id": "apr-012",
+      "vendorId": "vendor-10",
+      "vendorName": "Crestline Group",
+      "region": "AMER",
+      "stage": "Risk Review",
+      "owner": "R. Mora",
+      "submittedOn": "2026-08-21",
+      "dueOn": "2026-10-08",
+      "checklist": [
+        {
+          "item": "W-9 / tax forms on file",
+          "done": true
+        },
+        {
+          "item": "Insurance certificate",
+          "done": true
+        },
+        {
+          "item": "Cyber questionnaire",
+          "done": true
+        },
+        {
+          "item": "Financial health review",
+          "done": true
+        },
+        {
+          "item": "Supplier code of conduct",
+          "done": true
+        }
+      ],
+      "checklistDone": 5,
+      "checklistTotal": 5,
+      "auditTrail": [
+        {
+          "ts": "2026-08-21 09:14",
+          "actor": "P. Iyer",
+          "action": "Submitted for onboarding"
+        }
+      ]
+    },
+    {
+      "id": "apr-013",
+      "vendorId": "vendor-11",
+      "vendorName": "BluePeak Industrial Supplies",
+      "region": "EMEA",
+      "stage": "Compliance Review",
+      "owner": "A. Novak",
+      "submittedOn": "2026-07-13",
+      "dueOn": "2026-11-23",
+      "checklist": [
+        {
+          "item": "W-9 / tax forms on file",
+          "done": true
+        },
+        {
+          "item": "Insurance certificate",
+          "done": false
+        },
+        {
+          "item": "Cyber questionnaire",
+          "done": false
+        },
+        {
+          "item": "Financial health review",
+          "done": false
+        },
+        {
+          "item": "Supplier code of conduct",
+          "done": true
+        }
+      ],
+      "checklistDone": 2,
+      "checklistTotal": 5,
+      "auditTrail": [
+        {
+          "ts": "2026-07-13 09:14",
+          "actor": "J. Lau",
+          "action": "Submitted for onboarding"
+        }
+      ]
+    },
+    {
+      "id": "apr-014",
+      "vendorId": "vendor-14",
+      "vendorName": "Oakfield Packaging",
+      "region": "APAC",
+      "stage": "Category Approval",
+      "owner": "D. Silva",
+      "submittedOn": "2026-08-02",
+      "dueOn": "2026-10-19",
+      "checklist": [
+        {
+          "item": "W-9 / tax forms on file",
+          "done": true
+        },
+        {
+          "item": "Insurance certificate",
+          "done": false
+        },
+        {
+          "item": "Cyber questionnaire",
+          "done": true
+        },
+        {
+          "item": "Financial health review",
+          "done": false
+        },
+        {
+          "item": "Supplier code of conduct",
+          "done": true
+        }
+      ],
+      "checklistDone": 3,
+      "checklistTotal": 5,
+      "auditTrail": [
+        {
+          "ts": "2026-08-02 09:14",
+          "actor": "A. Novak",
+          "action": "Submitted for onboarding"
+        }
+      ]
+    },
+    {
+      "id": "apr-015",
+      "vendorId": "vendor-15",
+      "vendorName": "Silverline Systems",
+      "region": "APAC",
+      "stage": "Approved",
+      "owner": "J. Lau",
+      "submittedOn": "2026-07-13",
+      "dueOn": "2026-11-19",
+      "checklist": [
+        {
+          "item": "W-9 / tax forms on file",
+          "done": true
+        },
+        {
+          "item": "Insurance certificate",
+          "done": false
+        },
+        {
+          "item": "Cyber questionnaire",
+          "done": true
+        },
+        {
+          "item": "Financial health review",
+          "done": false
+        },
+        {
+          "item": "Supplier code of conduct",
+          "done": true
+        }
+      ],
+      "checklistDone": 3,
+      "checklistTotal": 5,
+      "auditTrail": [
+        {
+          "ts": "2026-07-13 09:14",
+          "actor": "J. Lau",
+          "action": "Submitted for onboarding"
+        }
+      ]
+    },
+    {
+      "id": "apr-016",
+      "vendorId": "vendor-16",
+      "vendorName": "Triton Consulting",
+      "region": "AMER",
+      "stage": "Submitted",
+      "owner": "R. Mora",
+      "submittedOn": "2026-08-17",
+      "dueOn": "2026-10-08",
+      "checklist": [
+        {
+          "item": "W-9 / tax forms on file",
+          "done": true
+        },
+        {
+          "item": "Insurance certificate",
+          "done": true
+        },
+        {
+          "item": "Cyber questionnaire",
+          "done": true
+        },
+        {
+          "item": "Financial health review",
+          "done": true
+        },
+        {
+          "item": "Supplier code of conduct",
+          "done": true
+        }
+      ],
+      "checklistDone": 5,
+      "checklistTotal": 5,
+      "auditTrail": [
+        {
+          "ts": "2026-08-17 09:14",
+          "actor": "A. Novak",
+          "action": "Submitted for onboarding"
+        }
+      ]
+    },
+    {
+      "id": "apr-017",
+      "vendorId": "vendor-17",
+      "vendorName": "Quantex Materials",
+      "region": "AMER",
+      "stage": "Risk Review",
+      "owner": "K. Tan",
+      "submittedOn": "2026-08-05",
+      "dueOn": "2026-12-25",
+      "checklist": [
+        {
+          "item": "W-9 / tax forms on file",
+          "done": true
+        },
+        {
+          "item": "Insurance certificate",
+          "done": false
+        },
+        {
+          "item": "Cyber questionnaire",
+          "done": false
+        },
+        {
+          "item": "Financial health review",
+          "done": true
+        },
+        {
+          "item": "Supplier code of conduct",
+          "done": true
+        }
+      ],
+      "checklistDone": 3,
+      "checklistTotal": 5,
+      "auditTrail": [
+        {
+          "ts": "2026-08-05 09:14",
+          "actor": "K. Tan",
+          "action": "Submitted for onboarding"
+        }
+      ]
+    },
+    {
+      "id": "apr-018",
+      "vendorId": "vendor-18",
+      "vendorName": "Harborside Distribution",
+      "region": "EMEA",
+      "stage": "Compliance Review",
+      "owner": "A. Novak",
+      "submittedOn": "2026-07-18",
+      "dueOn": "2026-11-24",
+      "checklist": [
+        {
+          "item": "W-9 / tax forms on file",
+          "done": true
+        },
+        {
+          "item": "Insurance certificate",
+          "done": true
+        },
+        {
+          "item": "Cyber questionnaire",
+          "done": false
+        },
+        {
+          "item": "Financial health review",
+          "done": true
+        },
+        {
+          "item": "Supplier code of conduct",
+          "done": false
+        }
+      ],
+      "checklistDone": 3,
+      "checklistTotal": 5,
+      "auditTrail": [
+        {
+          "ts": "2026-07-18 09:14",
+          "actor": "J. Lau",
+          "action": "Submitted for onboarding"
+        }
+      ]
+    },
+    {
+      "id": "apr-019",
+      "vendorId": "vendor-19",
+      "vendorName": "Redstone Technologies",
+      "region": "EMEA",
+      "stage": "Category Approval",
+      "owner": "P. Iyer",
+      "submittedOn": "2026-09-12",
+      "dueOn": "2026-12-22",
+      "checklist": [
+        {
+          "item": "W-9 / tax forms on file",
+          "done": true
+        },
+        {
+          "item": "Insurance certificate",
+          "done": true
+        },
+        {
+          "item": "Cyber questionnaire",
+          "done": true
+        },
+        {
+          "item": "Financial health review",
+          "done": false
+        },
+        {
+          "item": "Supplier code of conduct",
+          "done": false
+        }
+      ],
+      "checklistDone": 3,
+      "checklistTotal": 5,
+      "auditTrail": [
+        {
+          "ts": "2026-09-12 09:14",
+          "actor": "K. Tan",
+          "action": "Submitted for onboarding"
+        }
+      ]
+    },
+    {
+      "id": "apr-020",
+      "vendorId": "vendor-20",
+      "vendorName": "Vanguard Group",
+      "region": "AMER",
+      "stage": "Approved",
+      "owner": "J. Lau",
+      "submittedOn": "2026-09-13",
+      "dueOn": "2026-10-02",
+      "checklist": [
+        {
+          "item": "W-9 / tax forms on file",
+          "done": true
+        },
+        {
+          "item": "Insurance certificate",
+          "done": false
+        },
+        {
+          "item": "Cyber questionnaire",
+          "done": false
+        },
+        {
+          "item": "Financial health review",
+          "done": false
+        },
+        {
+          "item": "Supplier code of conduct",
+          "done": false
+        }
+      ],
+      "checklistDone": 1,
+      "checklistTotal": 5,
+      "auditTrail": [
+        {
+          "ts": "2026-09-13 09:14",
+          "actor": "K. Tan",
+          "action": "Submitted for onboarding"
+        }
+      ]
+    },
+    {
+      "id": "apr-021",
+      "vendorId": "vendor-21",
+      "vendorName": "Windmere Industrial Supplies",
+      "region": "EMEA",
+      "stage": "Submitted",
+      "owner": "A. Novak",
+      "submittedOn": "2026-08-25",
+      "dueOn": "2026-10-16",
+      "checklist": [
+        {
+          "item": "W-9 / tax forms on file",
+          "done": true
+        },
+        {
+          "item": "Insurance certificate",
+          "done": true
+        },
+        {
+          "item": "Cyber questionnaire",
+          "done": false
+        },
+        {
+          "item": "Financial health review",
+          "done": true
+        },
+        {
+          "item": "Supplier code of conduct",
+          "done": true
+        }
+      ],
+      "checklistDone": 4,
+      "checklistTotal": 5,
+      "auditTrail": [
+        {
+          "ts": "2026-08-25 09:14",
+          "actor": "D. Silva",
+          "action": "Submitted for onboarding"
+        }
+      ]
+    },
+    {
+      "id": "apr-022",
+      "vendorId": "vendor-22",
+      "vendorName": "Zenith Logistics",
+      "region": "AMER",
+      "stage": "Risk Review",
+      "owner": "A. Novak",
+      "submittedOn": "2026-09-13",
+      "dueOn": "2026-10-16",
+      "checklist": [
+        {
+          "item": "W-9 / tax forms on file",
+          "done": true
+        },
+        {
+          "item": "Insurance certificate",
+          "done": true
+        },
+        {
+          "item": "Cyber questionnaire",
+          "done": false
+        },
+        {
+          "item": "Financial health review",
+          "done": false
+        },
+        {
+          "item": "Supplier code of conduct",
+          "done": true
+        }
+      ],
+      "checklistDone": 3,
+      "checklistTotal": 5,
+      "auditTrail": [
+        {
+          "ts": "2026-09-13 09:14",
+          "actor": "J. Lau",
+          "action": "Submitted for onboarding"
+        }
+      ]
+    },
+    {
+      "id": "apr-023",
+      "vendorId": "vendor-23",
+      "vendorName": "Ironclad Components",
+      "region": "AMER",
+      "stage": "Compliance Review",
+      "owner": "K. Tan",
+      "submittedOn": "2026-09-01",
+      "dueOn": "2026-12-26",
+      "checklist": [
+        {
+          "item": "W-9 / tax forms on file",
+          "done": true
+        },
+        {
+          "item": "Insurance certificate",
+          "done": false
+        },
+        {
+          "item": "Cyber questionnaire",
+          "done": false
+        },
+        {
+          "item": "Financial health review",
+          "done": false
+        },
+        {
+          "item": "Supplier code of conduct",
+          "done": true
+        }
+      ],
+      "checklistDone": 2,
+      "checklistTotal": 5,
+      "auditTrail": [
+        {
+          "ts": "2026-09-01 09:14",
+          "actor": "A. Novak",
+          "action": "Submitted for onboarding"
+        }
+      ]
+    },
+    {
+      "id": "apr-024",
+      "vendorId": "vendor-24",
+      "vendorName": "Lakeshore Packaging",
+      "region": "APAC",
+      "stage": "Category Approval",
+      "owner": "A. Novak",
+      "submittedOn": "2026-08-03",
+      "dueOn": "2026-10-07",
+      "checklist": [
+        {
+          "item": "W-9 / tax forms on file",
+          "done": true
+        },
+        {
+          "item": "Insurance certificate",
+          "done": false
+        },
+        {
+          "item": "Cyber questionnaire",
+          "done": false
+        },
+        {
+          "item": "Financial health review",
+          "done": true
+        },
+        {
+          "item": "Supplier code of conduct",
+          "done": false
+        }
+      ],
+      "checklistDone": 2,
+      "checklistTotal": 5,
+      "auditTrail": [
+        {
+          "ts": "2026-08-03 09:14",
+          "actor": "D. Silva",
+          "action": "Submitted for onboarding"
+        }
+      ]
+    },
+    {
+      "id": "apr-025",
+      "vendorId": "vendor-25",
+      "vendorName": "Brightpath Systems",
+      "region": "APAC",
+      "stage": "Approved",
+      "owner": "J. Lau",
+      "submittedOn": "2026-08-28",
+      "dueOn": "2026-11-25",
+      "checklist": [
+        {
+          "item": "W-9 / tax forms on file",
+          "done": true
+        },
+        {
+          "item": "Insurance certificate",
+          "done": false
+        },
+        {
+          "item": "Cyber questionnaire",
+          "done": false
+        },
+        {
+          "item": "Financial health review",
+          "done": false
+        },
+        {
+          "item": "Supplier code of conduct",
+          "done": true
+        }
+      ],
+      "checklistDone": 2,
+      "checklistTotal": 5,
+      "auditTrail": [
+        {
+          "ts": "2026-08-28 09:14",
+          "actor": "D. Silva",
+          "action": "Submitted for onboarding"
+        }
+      ]
+    },
+    {
+      "id": "apr-026",
+      "vendorId": "vendor-26",
+      "vendorName": "Cornerstone Consulting",
+      "region": "AMER",
+      "stage": "Submitted",
+      "owner": "P. Iyer",
+      "submittedOn": "2026-07-08",
+      "dueOn": "2026-10-26",
+      "checklist": [
+        {
+          "item": "W-9 / tax forms on file",
+          "done": true
+        },
+        {
+          "item": "Insurance certificate",
+          "done": true
+        },
+        {
+          "item": "Cyber questionnaire",
+          "done": true
+        },
+        {
+          "item": "Financial health review",
+          "done": true
+        },
+        {
+          "item": "Supplier code of conduct",
+          "done": true
+        }
+      ],
+      "checklistDone": 5,
+      "checklistTotal": 5,
+      "auditTrail": [
+        {
+          "ts": "2026-07-08 09:14",
+          "actor": "D. Silva",
+          "action": "Submitted for onboarding"
+        }
+      ]
+    },
+    {
+      "id": "apr-027",
+      "vendorId": "vendor-27",
+      "vendorName": "Delmar Materials",
+      "region": "AMER",
+      "stage": "Risk Review",
+      "owner": "A. Novak",
+      "submittedOn": "2026-07-03",
+      "dueOn": "2026-12-28",
+      "checklist": [
+        {
+          "item": "W-9 / tax forms on file",
+          "done": true
+        },
+        {
+          "item": "Insurance certificate",
+          "done": true
+        },
+        {
+          "item": "Cyber questionnaire",
+          "done": false
+        },
+        {
+          "item": "Financial health review",
+          "done": true
+        },
+        {
+          "item": "Supplier code of conduct",
+          "done": true
+        }
+      ],
+      "checklistDone": 4,
+      "checklistTotal": 5,
+      "auditTrail": [
+        {
+          "ts": "2026-07-03 09:14",
+          "actor": "D. Silva",
+          "action": "Submitted for onboarding"
+        }
+      ]
+    },
+    {
+      "id": "apr-028",
+      "vendorId": "vendor-28",
+      "vendorName": "Eastwood Distribution",
+      "region": "EMEA",
+      "stage": "Compliance Review",
+      "owner": "P. Iyer",
+      "submittedOn": "2026-09-22",
+      "dueOn": "2026-10-07",
+      "checklist": [
+        {
+          "item": "W-9 / tax forms on file",
+          "done": true
+        },
+        {
+          "item": "Insurance certificate",
+          "done": false
+        },
+        {
+          "item": "Cyber questionnaire",
+          "done": true
+        },
+        {
+          "item": "Financial health review",
+          "done": true
+        },
+        {
+          "item": "Supplier code of conduct",
+          "done": true
+        }
+      ],
+      "checklistDone": 4,
+      "checklistTotal": 5,
+      "auditTrail": [
+        {
+          "ts": "2026-09-22 09:14",
+          "actor": "K. Tan",
+          "action": "Submitted for onboarding"
+        }
+      ]
+    },
+    {
+      "id": "apr-029",
+      "vendorId": "vendor-29",
+      "vendorName": "Fairpoint Technologies",
+      "region": "EMEA",
+      "stage": "Category Approval",
+      "owner": "D. Silva",
+      "submittedOn": "2026-08-26",
+      "dueOn": "2026-11-25",
+      "checklist": [
+        {
+          "item": "W-9 / tax forms on file",
+          "done": true
+        },
+        {
+          "item": "Insurance certificate",
+          "done": false
+        },
+        {
+          "item": "Cyber questionnaire",
+          "done": true
+        },
+        {
+          "item": "Financial health review",
+          "done": false
+        },
+        {
+          "item": "Supplier code of conduct",
+          "done": true
+        }
+      ],
+      "checklistDone": 3,
+      "checklistTotal": 5,
+      "auditTrail": [
+        {
+          "ts": "2026-08-26 09:14",
+          "actor": "K. Tan",
+          "action": "Submitted for onboarding"
+        }
+      ]
+    },
+    {
+      "id": "apr-030",
+      "vendorId": "vendor-30",
+      "vendorName": "Granite Group",
+      "region": "AMER",
+      "stage": "Approved",
+      "owner": "P. Iyer",
+      "submittedOn": "2026-08-26",
+      "dueOn": "2026-12-16",
+      "checklist": [
+        {
+          "item": "W-9 / tax forms on file",
+          "done": true
+        },
+        {
+          "item": "Insurance certificate",
+          "done": false
+        },
+        {
+          "item": "Cyber questionnaire",
+          "done": false
+        },
+        {
+          "item": "Financial health review",
+          "done": false
+        },
+        {
+          "item": "Supplier code of conduct",
+          "done": false
+        }
+      ],
+      "checklistDone": 1,
+      "checklistTotal": 5,
+      "auditTrail": [
+        {
+          "ts": "2026-08-26 09:14",
+          "actor": "A. Novak",
+          "action": "Submitted for onboarding"
+        }
+      ]
+    }
+  ],
+  "documents": [
+    {
+      "id": "doc-01",
+      "name": "Master Services Agreement — Northwind Industrial Supplies.pdf",
+      "vendorId": "vendor-01",
+      "vendorName": "Northwind Industrial Supplies",
+      "type": "Contract",
+      "fileKind": "pdf",
+      "fileName": "northwind-master-services-agreement.pdf",
+      "updatedOn": "2026-09-02"
+    },
+    {
+      "id": "doc-02",
+      "name": "Mutual NDA — Northwind Industrial Supplies.pdf",
+      "vendorId": "vendor-01",
+      "vendorName": "Northwind Industrial Supplies",
+      "type": "Contract",
+      "fileKind": "pdf",
+      "fileName": "northwind-mutual-nda.pdf",
+      "updatedOn": "2026-08-18"
+    },
+    {
+      "id": "doc-03",
+      "name": "Vendor Onboarding Review Memo — Northwind Industrial Supplies.sfdt",
+      "vendorId": "vendor-01",
+      "vendorName": "Northwind Industrial Supplies",
+      "type": "Review Memo",
+      "fileKind": "sfdt",
+      "fileName": null,
+      "updatedOn": "2026-10-01"
+    },
+    {
+      "id": "doc-04",
+      "name": "ISO 27001 Certificate — Acme Logistics.pdf",
+      "vendorId": "vendor-02",
+      "vendorName": "Acme Logistics",
+      "type": "Certificate",
+      "fileKind": "pdf",
+      "fileName": "acme-logistics-iso-27001.pdf",
+      "updatedOn": "2026-07-11"
+    },
+    {
+      "id": "doc-05",
+      "name": "Supplier Questionnaire — Vertex Components.sfdt",
+      "vendorId": "vendor-03",
+      "vendorName": "Vertex Components",
+      "type": "Questionnaire",
+      "fileKind": "sfdt",
+      "fileName": null,
+      "updatedOn": "2026-09-22"
+    }
+  ],
+  "regions": [
+    "AMER",
+    "EMEA",
+    "APAC"
+  ],
+  "riskBands": [
+    {
+      "label": "Low",
+      "tone": "success",
+      "min": 75
+    },
+    {
+      "label": "Watch",
+      "tone": "warning",
+      "min": 50
+    },
+    {
+      "label": "Critical",
+      "tone": "danger",
+      "min": 0
+    }
+  ],
+  "stages": [
+    "Submitted",
+    "Risk Review",
+    "Compliance Review",
+    "Category Approval",
+    "Approved"
+  ]
+}

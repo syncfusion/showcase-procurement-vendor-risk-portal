@@ -1,0 +1,314 @@
+/* App styles on top of the token layers.
+   Layout utilities come from Tailwind 4 where handy; component looks consume tokens. */
+
+/* ---- App shell ---- */
+.app-shell { display: flex; min-height: 100vh; background: var(--app-shell-bg); color: var(--color-sf-fg-primary);
+  font-family: var(--sf-font-sans); font-size: 14px; }
+/* App name fits the 240px sidebar without clipping. */
+.app-shell-brand-text { min-width: 0; }
+.app-shell *, .app-shell *::before, .app-shell *::after { box-sizing: border-box; }
+.app-shell-skip { position: absolute; left: -9999px; top: 0; background: var(--color-sf-bg-surface); color: var(--color-sf-fg-brand-primary);
+  padding: 8px 16px; z-index: 2000; border-radius: var(--sf-radius-sm); }
+.app-shell-skip:focus { left: 8px; top: 8px; }
+.app-shell-workspace { flex: 1; min-width: 0; display: flex; flex-direction: column; margin-left: 0; transition: margin-left 0.25s ease; }
+.app-shell-header { display: flex; align-items: center; gap: var(--sf-space-2); padding: 10px var(--sf-space-4);
+  background: var(--color-sf-bg-surface); border-bottom: 1px solid var(--color-sf-border-primary); min-height: 64px; }
+.app-shell-header-start { display: flex; align-items: center; gap: var(--sf-space-2); flex: 1; min-width: 0; }
+.app-shell-header-end { display: flex; align-items: center; gap: var(--sf-space-2); }
+.app-shell-icon-button { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px;
+  border-radius: var(--sf-radius-sm); border: 1px solid transparent; background: transparent; color: var(--color-sf-fg-secondary);
+  cursor: pointer; }
+.app-shell-icon-button:hover { background: var(--color-sf-bg-surface-hover); }
+.app-shell-icon-button:focus-visible, .app-shell-link:focus-visible, .app-shell-close:focus-visible { outline: 2px solid var(--app-focus-ring); outline-offset: 2px; }
+.app-shell-nav { display: flex; flex-direction: column; height: 100%; padding: var(--sf-space-3) 0; }
+.app-shell-brand { display: flex; align-items: center; gap: var(--sf-space-3); padding: var(--sf-space-2) var(--sf-space-3);
+  min-height: 48px; }
+.app-shell-logo { flex: 0 0 40px; height: 40px; border-radius: var(--sf-radius-md); display: flex; align-items: center; justify-content: center;
+  background: var(--color-sf-bg-brand-subtle); color: var(--color-sf-fg-brand-primary); font-weight: 700; }
+.app-shell-brand-text strong { display: block; font-size: 13px; letter-spacing: -0.2px; line-height: 1.25; white-space: normal; overflow-wrap: break-word; }
+.app-shell-brand-text small { display: block; font-size: 12px; color: var(--color-sf-fg-secondary); white-space: normal; }
+.app-shell-links { list-style: none; margin: var(--sf-space-3) 0 0; padding: 0 var(--sf-space-3); display: grid; gap: 2px; }
+.app-shell-links li { display: flex; }
+.app-shell-link { display: flex; align-items: center; gap: var(--sf-space-3); width: 100%; height: 40px; padding: 0 10px;
+  border-radius: var(--sf-radius-sm); color: var(--color-sf-fg-secondary); text-decoration: none; }
+.app-shell-link:hover { background: var(--color-sf-bg-surface-hover); color: var(--color-sf-fg-primary); }
+.app-shell-link[aria-current="page"] { background: var(--app-nav-active-bg); color: var(--app-nav-active-fg); font-weight: 600; }
+.app-shell-link-icon { flex: 0 0 20px; }
+.app-shell-link-label { white-space: nowrap; }
+/* Docked (64px) strip: labels visually hidden, still the accessible names */
+.app-shell[data-nav="docked"] .app-shell-brand-text, .app-shell[data-nav="docked"] .app-shell-link-label,
+.app-shell[data-nav="docked"] .app-shell-footer { position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip-path: inset(50%); white-space: nowrap; }
+.app-shell[data-nav="docked"] .app-shell-link { justify-content: center; padding: 0; }
+.app-shell[data-nav="docked"] .app-shell-brand { padding: var(--sf-space-2) var(--sf-space-2); justify-content: center; }
+.app-shell-footer { margin-top: auto; padding: var(--sf-space-3); color: var(--color-sf-fg-secondary); font-size: 12px; text-align: center; }
+.app-shell-close { margin-left: auto; }
+.app-shell-main { flex: 1; padding: var(--sf-space-6); min-width: 0; }
+
+/* ---- Cards / KPI (Syncfusion Card CSS classes) ---- */
+.e-card { background: var(--app-card-bg); border: 1px solid var(--app-card-border); border-radius: var(--sf-radius-lg);
+  box-shadow: var(--app-card-shadow); }
+.e-card > .e-card-header { padding: var(--sf-space-4) var(--sf-space-4) 0; display: flex; align-items: center; gap: var(--sf-space-3); }
+.e-card > .e-card-header .e-card-header-caption { flex: 1; min-width: 0; }
+/* KPI icon sits in the header caption row (in flow), aligned with the title, never
+   crossing the header's bottom border. */
+.e-card > .e-card-header .e-card-header-title { font-weight: 600; font-size: 14px; margin: 0; color: var(--color-sf-fg-primary); }
+.e-card > .e-card-header .e-card-sub-title { font-size: 12px; color: var(--color-sf-fg-secondary); margin: 2px 0 0; }
+.e-card > .e-card-content { padding: var(--sf-space-3) var(--sf-space-4) var(--sf-space-4); color: var(--color-sf-fg-secondary); font-size: 13px; }
+.e-card .e-card-content > div { line-height: 1.35; }
+
+/* KPI card layout on the Syncfusion Card. */
+.app-kpi-row { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: var(--sf-space-4); margin-bottom: var(--sf-space-5); }
+.app-kpi { position: relative; min-height: var(--app-kpi-min-height); }
+.app-kpi-value { font-size: 26px; font-weight: 700; line-height: 1.15; color: var(--color-sf-fg-primary); }
+.app-kpi-note { margin-top: 4px; font-size: 12px; color: var(--color-sf-fg-secondary); }
+.app-kpi-icon { position: static; flex: 0 0 auto; width: var(--app-kpi-icon-size);
+  height: var(--app-kpi-icon-size); border-radius: var(--sf-radius-sm); display: inline-flex; align-items: center; justify-content: center;
+  background: var(--app-kpi-icon-bg); color: var(--app-kpi-icon-fg); }
+.app-kpi .e-card-header { align-items: flex-start; }
+.app-kpi-icon--success { background: var(--color-sf-bg-success-primary); color: var(--color-sf-fg-success-primary); }
+.app-kpi-icon--warning { background: var(--color-sf-bg-warning-primary); color: var(--color-sf-fg-warning-primary); }
+.app-kpi-icon--danger { background: var(--color-sf-bg-danger-primary); color: var(--color-sf-fg-danger-primary); }
+.app-kpi-icon--info { background: var(--color-sf-bg-info-primary); color: var(--color-sf-fg-info-primary); }
+.app-kpi-icon--neutral { background: var(--color-sf-bg-neutral-primary); color: var(--color-sf-fg-neutral-primary); }
+button.app-kpi-link { text-decoration: none; color: inherit; display: block; text-align: left; border: 1px solid var(--app-card-border); font: inherit; }
+button.app-kpi-link { cursor: pointer; }
+button.app-kpi-link:focus-visible { outline: 2px solid var(--app-kpi-focus-ring); outline-offset: 2px; }
+
+/* ---- Page scaffolding ---- */
+.app-page { max-width: 1440px; margin: 0 auto; }
+.app-page-header { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--sf-space-4); margin-bottom: var(--sf-space-5); flex-wrap: wrap; }
+.app-page-title { margin: 0; font-size: 22px; font-weight: 700; color: var(--color-sf-fg-primary); }
+.app-page-subtitle { margin: 4px 0 0; font-size: 13px; color: var(--color-sf-fg-secondary); }
+.app-grid-2 { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--sf-space-4); }
+.app-grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--sf-space-4); }
+.app-grid-main-side { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 340px); gap: var(--sf-space-4); align-items: start; }
+.app-vendors-tree, .app-vendors-register { margin-bottom: var(--sf-space-4); }
+.app-vendors-detail { margin-top: var(--sf-space-1); }
+
+/* ---- Filter bar ---- */
+.app-filter-bar { display: flex; align-items: end; gap: var(--sf-space-4); flex-wrap: wrap; margin-bottom: var(--sf-space-5); }
+.app-filter-field { display: flex; flex-direction: column; gap: 6px; }
+.app-filter-field > label { font-size: 12px; font-weight: 600; color: var(--color-sf-fg-secondary); }
+.app-filter-chips { display: flex; gap: var(--sf-space-2); flex-wrap: wrap; align-items: center; }
+.app-filter-chip { display: inline-flex; align-items: center; gap: 6px; padding: 4px 12px; border-radius: var(--app-filter-chip-radius);
+  border: 1px solid var(--app-filter-chip-border); background: var(--app-filter-chip-bg); color: var(--app-filter-chip-fg);
+  font-size: 12px; font-weight: 600; }
+.app-filter-chip button { border: none; background: none; color: inherit; cursor: pointer; display: inline-flex; padding: 0; }
+
+/* ---- Pager: the current/active page number must be readable in both themes ---- */
+.e-pager .e-currentitem, .e-pager .e-currentitem:hover { background: var(--color-sf-fg-brand-primary); color: #fff; }
+:root[data-theme="dark"] .e-pager .e-currentitem, :root[data-theme="dark"] .e-pager .e-currentitem:hover { color: var(--color-sf-bg-primary); }
+.sf-pager .sf-current-item, .sf-pager .sf-current-item.sf-focused { background: var(--color-sf-fg-brand-primary); color: #fff; }
+:root[data-theme="dark"] .sf-pager .sf-current-item, :root[data-theme="dark"] .sf-pager .sf-current-item.sf-focused { color: var(--color-sf-bg-primary); }
+
+/* ---- Region codes in grids (tooltip carries the full name) ---- */
+.app-region-code { cursor: help; text-decoration: underline dotted var(--color-sf-border-strong); text-underline-offset: 3px; }
+
+/* ---- Badges ---- */
+.app-badge { display: inline-flex; align-items: center; gap: 4px; padding: 2px 10px; border-radius: var(--sf-radius-pill);
+  font-size: 12px; font-weight: 600; white-space: nowrap; line-height: 1.4; }
+.app-badge--success { background: var(--color-sf-bg-success-primary); color: var(--color-sf-fg-success-primary); }
+.app-badge--warning { background: var(--color-sf-bg-warning-primary); color: var(--color-sf-fg-warning-primary); }
+.app-badge--danger { background: var(--color-sf-bg-danger-primary); color: var(--color-sf-fg-danger-primary); }
+.app-badge--info { background: var(--color-sf-bg-info-primary); color: var(--color-sf-fg-info-primary); }
+.app-badge--neutral { background: var(--color-sf-bg-neutral-primary); color: var(--color-sf-fg-neutral-primary); }
+
+/* ---- Buttons ---- */
+.app-button { display: inline-flex; align-items: center; gap: 8px; height: 36px; padding: 0 var(--sf-space-4);
+  border-radius: var(--sf-radius-sm); border: 1px solid var(--color-sf-border-primary); background: var(--color-sf-bg-surface);
+  color: var(--color-sf-fg-primary); font-size: 14px; font-weight: 500; cursor: pointer; }
+.app-button:hover { background: var(--color-sf-bg-surface-hover); }
+.app-button:focus-visible { outline: 2px solid var(--app-focus-ring); outline-offset: 2px; }
+.app-button--primary { background: var(--color-sf-fg-brand-primary); border-color: var(--color-sf-fg-brand-primary); color: #fff; }
+:root[data-theme="dark"] .app-button--primary { color: var(--color-sf-bg-primary); }
+.app-button--outline { background: transparent; border-color: var(--app-filter-reset-border); color: var(--app-filter-reset-fg); }
+.app-button--danger { background: var(--color-sf-bg-danger-primary); border-color: var(--color-sf-fg-danger-primary); color: var(--color-sf-fg-danger-primary); }
+
+/* ---- Dashboard Layout panels ---- */
+.app-panel { padding: var(--sf-space-3); min-height: 0; }
+/* Syncfusion appends .e-panel-container (height 100%) after the card content.
+   In flow, that empty box hangs below the panel and becomes a blank scroll region.
+   Park it over the panel so the resize handles stay on the edges. */
+.e-dashboardlayout.e-control > .e-panel > .e-panel-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  min-height: 0;
+  pointer-events: none;
+}
+.e-dashboardlayout.e-control > .e-panel > .e-panel-container > .e-resize { pointer-events: auto; }
+.app-panel .app-chart-note { margin: var(--sf-space-1) 0 0; font-size: 12px; color: var(--color-sf-fg-secondary); }
+
+.app-panel--scroll { display: flex; flex-direction: column; min-height: 0; }
+.app-panel--scroll > .e-panel-container { display: flex; flex-direction: column; height: auto; min-height: 100%; }
+.app-panel--scroll .app-panel-header, .app-panel--scroll .app-chart-note { flex: none; }
+.app-panel--scroll .app-plain-list,
+.app-panel--scroll .app-top-risk-list { flex: 0 0 auto; overflow: visible; }
+#dashboard-top-risk.e-listview,
+.app-top-risk-list.e-listview { height: auto; overflow: visible; }
+.app-panel-header { font-weight: 600; font-size: 14px; margin-bottom: var(--sf-space-3); color: var(--color-sf-fg-primary); }
+.app-chart-note { margin: var(--sf-space-2) 0 0; font-size: 12px; color: var(--color-sf-fg-secondary); text-align: center; }
+
+/* ---- Plain lists (dashboard top-risk, audit trail) ---- */
+.app-plain-list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--sf-space-2); }
+.app-list-button { display: flex; flex-wrap: wrap; align-items: center; gap: var(--sf-space-2); width: 100%;
+  padding: var(--sf-space-2) var(--sf-space-3); border: 1px solid var(--color-sf-border-primary); border-radius: var(--sf-radius-sm);
+  background: var(--color-sf-bg-surface); cursor: pointer; text-align: left; font: inherit; }
+.app-list-button:hover { background: var(--color-sf-bg-surface-hover); }
+.app-list-button:focus-visible { outline: 2px solid var(--app-focus-ring); outline-offset: 2px; }
+.app-list-name { font-weight: 600; flex: 1 1 160px; }
+.app-list-meta { flex-basis: 100%; font-size: 12px; color: var(--color-sf-fg-secondary); }
+
+/* ---- ListView detail template ---- */
+/* Template rows are taller than ej2's fixed 40px item: let items size to their content
+   so the wrapped name/badge/updated lines never overlap the next list item. The theme
+   pins height on `.e-listview:not(.e-list-template) .e-list-item` (0,3,1), so the
+   override matches that specificity and wins on source order (app.css loads last). */
+.e-listview:not(.e-list-template) .e-list-item.app-lv-auto, .e-listview:not(.e-list-template) .e-list-item { height: auto; min-height: 40px; }
+/* Theme CSS is injected after app.css, so the documents list needs !important
+   to beat the 40px item height. Leftover ripple layers otherwise stack into a dark row. */
+.app-docs-list .e-listview:not(.e-list-template) .e-list-item {
+  height: auto !important; min-height: 40px; line-height: 1.4;
+}
+.app-docs-list .e-listview .e-ripple-element { display: none !important; }
+.app-docs-list .e-listview .e-list-item.e-active,
+.app-docs-list .e-listview .e-list-item.e-focused {
+  background: var(--color-sf-bg-surface-hover) !important;
+  color: var(--color-sf-fg-primary) !important;
+}
+.e-listview:not(.e-list-template) .e-list-item { padding: var(--sf-space-2) var(--sf-space-3); }
+.app-lv-item { display: flex; flex-wrap: wrap; align-items: center; gap: var(--sf-space-2); padding: var(--sf-space-1) 0; }
+.app-lv-text { font-weight: 600; flex: 1 1 auto; min-width: 0; word-break: break-word; }
+.app-cert-name { display: inline-flex; align-items: center; gap: 2px; flex: 1 1 auto; min-width: 0; }
+.app-cert-name .app-lv-text { flex: 0 1 auto; }
+.app-cert-info { display: inline-flex; align-items: center; justify-content: center; flex: none;
+  width: 28px; height: 28px; padding: 0; border: 0; border-radius: var(--sf-radius-sm);
+  background: transparent; color: var(--color-sf-fg-secondary); cursor: help; }
+.app-cert-info:hover { background: var(--color-sf-bg-surface-hover); color: var(--color-sf-fg-primary); }
+.app-cert-info:focus-visible { outline: 2px solid var(--app-focus-ring); outline-offset: 2px; }
+.app-cert-tip.e-tooltip-wrap { max-width: 280px; }
+.app-cert-tip .e-tip-content { white-space: normal; line-height: 1.45; font-size: 12px; text-align: left; }
+.app-lv-secondary { flex-basis: 100%; font-size: 12px; color: var(--color-sf-fg-secondary); }
+
+/* ---- Kanban card template ---- */
+.app-kanban-card { display: flex; flex-direction: column; gap: var(--sf-space-2); padding: var(--sf-space-2);
+  border: 1px solid var(--app-card-border); border-radius: var(--sf-radius-sm);
+  background: var(--color-sf-bg-surface); }
+.app-kanban-card-name { font-weight: 600; font-size: 13px; color: var(--color-sf-fg-primary); }
+.app-kanban-card-badges { display: flex; gap: var(--sf-space-1); flex-wrap: wrap; }
+.app-kanban-card-badges .app-badge { max-width: 100%; overflow: hidden; text-overflow: ellipsis; }
+/* The overdue pill is a column child, so it would stretch to the card width. */
+.app-kanban-card > .app-badge { align-self: flex-start; width: fit-content; max-width: 100%; }
+.app-kanban-card-meta { display: flex; flex-direction: column; gap: 3px; font-size: 12px; color: var(--color-sf-fg-secondary); }
+.e-kanban .e-card .e-card-content { padding: var(--sf-space-2); }
+.e-kanban .e-card { min-width: 200px; }
+
+/* ---- Forms ---- */
+.app-form { display: grid; gap: var(--sf-space-3); }
+.app-input { height: 36px; padding: 0 var(--sf-space-3); border: 1px solid var(--color-sf-border-primary);
+  border-radius: var(--sf-radius-sm); background: var(--color-sf-bg-surface); color: var(--color-sf-fg-primary); font: inherit; }
+textarea.app-input { height: auto; padding: var(--sf-space-2) var(--sf-space-3); }
+.app-input:focus-visible { outline: 2px solid var(--app-focus-ring); outline-offset: 1px; }
+.app-form-error { margin: 0; color: var(--color-sf-fg-danger-primary); font-size: 13px; }
+/* Move-a-vendor sits beside the audit list. Keep the card as tall as its fields */
+.app-approvals-lower { align-items: start; margin-top: var(--sf-space-4); }
+.app-move-form { width: 100%; }
+.app-move-form .app-filter-field { width: 100%; min-width: 0; }
+.app-move-form .app-input,
+.app-move-form .e-input-group,
+.app-move-form .e-input-group.e-control-wrapper,
+.app-move-form .e-date-wrapper,
+.app-move-form .e-ddl { width: 100%; }
+.app-move-actions { display: flex; flex-wrap: wrap; align-items: center; gap: var(--sf-space-3); margin: 0; }
+
+/* ---- Audit trail ---- */
+.app-audit-row { display: flex; flex-wrap: wrap; gap: var(--sf-space-2); padding: var(--sf-space-2) 0;
+  border-bottom: 1px solid var(--color-sf-border-primary); font-size: 13px; }
+.app-audit-ts { color: var(--color-sf-fg-secondary); font-variant-numeric: tabular-nums; }
+.app-audit-actor { font-weight: 600; }
+
+/* ---- Documents / AI page specifics ---- */
+.app-docs-layout { display: grid; grid-template-columns: minmax(280px, 1fr) minmax(0, 2.2fr); gap: var(--sf-space-4); align-items: start; }
+.app-docs-list .e-listview { height: 420px; overflow: auto; }
+.app-docs-list .app-lv-item {
+  display: grid;
+  grid-template-columns: 20px minmax(0, 1fr);
+  column-gap: var(--sf-space-3);
+  row-gap: 4px;
+  align-items: center;
+  padding: 2px 0;
+}
+.app-docs-list .app-file-icon { grid-column: 1; grid-row: 1; justify-self: center; align-self: center; margin: 0; line-height: 0; }
+.app-docs-list .app-lv-text { grid-column: 2; grid-row: 1; line-height: 1.35; }
+.app-docs-list .app-lv-meta { grid-column: 2; grid-row: 2; display: flex; flex-wrap: wrap; align-items: center; gap: var(--sf-space-2); }
+.app-docs-list .app-lv-secondary { flex-basis: auto; line-height: 1.3; }
+.app-file-icon { display: block; flex: 0 0 auto; }
+.app-file-icon__page { fill: var(--color-sf-bg-surface); stroke: currentColor; stroke-width: 1.25; }
+.app-file-icon__fold { fill: none; stroke: currentColor; stroke-width: 1.25; stroke-linejoin: round; }
+.app-file-icon__band { fill: currentColor; }
+.app-file-icon__label { fill: var(--app-file-glyph); font-family: var(--sf-font-sans); font-weight: 700; font-size: 6px; }
+.app-file-icon--word .app-file-icon__label { font-size: 9px; }
+.app-file-icon--pdf { color: var(--app-file-pdf); }
+.app-file-icon--word { color: var(--app-file-word); }
+.app-tab-body { position: relative; min-height: 420px; }
+.app-empty { display: flex; align-items: center; justify-content: center; min-height: 380px;
+  color: var(--color-sf-fg-secondary); background: var(--color-sf-bg-surface-muted); border-radius: var(--sf-radius-md); }
+.app-error { display: flex; flex-direction: column; gap: var(--sf-space-2); align-items: flex-start; padding: var(--sf-space-4);
+  border: 1px solid var(--color-sf-fg-danger-primary); border-radius: var(--sf-radius-md); color: var(--color-sf-fg-danger-primary); }
+.app-error-title { margin: 0; font-weight: 700; }
+.app-error-detail { margin: 0; font-size: 13px; }
+.app-ai-card { width: 100%; }
+.app-ai-card .e-card-header { flex-wrap: wrap; }
+.app-ai-card .e-card-content { display: flex; flex-direction: column; min-height: 0; flex: 1; }
+.app-ai-card .e-card-content #vendor-ai-assist,
+.app-ai-card .e-card-content #vendor-ai-assist .e-views,
+.app-ai-card .e-card-content #vendor-ai-assist .e-view-container,
+.app-ai-card .e-card-content #vendor-ai-assist .e-view-content {
+  flex: 0 0 auto; min-height: 0; height: auto !important;
+}
+.app-ai-card .e-card-content #vendor-ai-assist { max-height: 640px; }
+.app-ai-banner { margin-bottom: var(--sf-space-4); padding: var(--sf-space-2) var(--sf-space-3); border: 1px dashed var(--color-sf-border-brand);
+  border-radius: var(--sf-radius-sm); background: var(--color-sf-bg-brand-subtle); color: var(--color-sf-fg-brand-primary);
+  font-size: 12px; font-weight: 600; width: 100%; }
+.app-task-row { padding: var(--sf-space-2) 0; border-bottom: 1px solid var(--color-sf-border-primary); }
+.app-band--danger { box-shadow: inset 3px 0 0 var(--color-sf-fg-danger-primary); }
+.app-band--warning { box-shadow: inset 3px 0 0 var(--color-sf-fg-warning-primary); }
+.app-band--success { box-shadow: inset 3px 0 0 var(--color-sf-fg-success-primary); }
+
+/* ---- Documents layout responsive ---- */
+@media (max-width: 1023.98px) { .app-docs-layout { grid-template-columns: minmax(0, 1fr); } }
+
+/* ---- Charts: keyboard focus + hover affordances ---- */
+.e-chart:focus-visible, .e-accumulationchart:focus-visible, .e-dashboardlayout:focus-visible,
+.e-grid:focus-visible, .e-kanban:focus-visible, .e-listview:focus-visible,
+svg:focus-visible, [tabindex]:focus-visible {
+  outline: 2px solid var(--app-focus-ring) !important; outline-offset: 2px !important; }
+.app-list-button:hover, .app-list-button:focus-visible { background: var(--color-sf-bg-surface-hover); }
+.e-listview-item:hover { background: var(--color-sf-bg-surface-hover); }
+.e-listview .e-list-item.e-active { background: var(--color-sf-bg-surface-hover) !important; color: var(--color-sf-fg-primary) !important; }
+
+/* ---- Kanban cards keep readable width ---- */
+.e-kanban { min-height: 520px; }
+.e-kanban .e-card-column { min-width: 210px; }
+
+/* ---- Responsive ---- */
+@media (max-width: 1279.98px) {
+  .app-kpi-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .app-grid-3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .app-grid-main-side { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 1023.98px) {
+  .app-shell-main { padding: var(--sf-space-4); }
+  .app-grid-2 { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 767.98px) {
+  .app-kpi-row { grid-template-columns: minmax(0, 1fr); }
+  .app-grid-3 { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* ---- Reduced motion ---- */
+@media (prefers-reduced-motion: reduce) {
+  .app-shell-workspace { transition: none; }
+}

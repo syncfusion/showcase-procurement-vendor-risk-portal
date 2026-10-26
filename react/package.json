@@ -1,0 +1,43 @@
+{
+  "name": "procurement-vendor-risk-portal",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@syncfusion/ej2-react-buttons": "35.1.37",
+    "@syncfusion/ej2-react-calendars": "35.1.37",
+    "@syncfusion/ej2-react-charts": "35.1.37",
+    "@syncfusion/ej2-react-documenteditor": "35.1.37",
+    "@syncfusion/ej2-react-dropdowns": "35.1.37",
+    "@syncfusion/ej2-react-interactive-chat": "35.1.37",
+    "@syncfusion/ej2-react-kanban": "35.1.37",
+    "@syncfusion/ej2-react-layouts": "35.1.37",
+    "@syncfusion/ej2-react-lists": "35.1.37",
+    "@syncfusion/ej2-react-navigations": "35.1.37",
+    "@syncfusion/ej2-react-pdfviewer": "35.1.37",
+    "@syncfusion/ej2-react-popups": "35.1.37",
+    "@syncfusion/ej2-tailwind3-theme": "35.1.37",
+    "@syncfusion/react-base": "35.1.37",
+    "@syncfusion/react-buttons": "35.1.37",
+    "@syncfusion/react-grid": "35.1.37",
+    "@syncfusion/react-tailwind-theme": "^35.1.37",
+    "lucide-react": "^1.57.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "react-router-dom": "^7.18.4"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "6.1.2",
+    "tailwindcss": "4.3.3",
+    "typescript": "^5.6.2",
+    "vite": "8.3.0"
+  }
+}
